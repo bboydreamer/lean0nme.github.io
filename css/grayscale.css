@@ -465,8 +465,8 @@ span.email-result{
 }
 
 .btn-fb {
-    border: 1px solid #CC0000;
-    color: #CC0000;
+    border: 1px solid #FFAAAA;
+    color: #FFAAAA;
     background-color: transparent;
 }
 
@@ -475,7 +475,7 @@ span.email-result{
     border: 1px solid #fff;
     outline: 0;
     color: #000;
-    background-color: #fff;
+    background-color: #FFAAAA;
 }
 
 ul.banner-social-buttons {
