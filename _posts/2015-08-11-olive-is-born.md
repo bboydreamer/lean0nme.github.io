@@ -9,4 +9,4 @@ These problems are partially enumerated in a recent article of The Tech, which c
 
 We talked to 160 students on campus and found that an anonymous texting network could help supplement existing services and friend support networks. The results are displayed below.
 
-![Our Preliminary Survey] (/img/survey.png) "Mental Health Survey")
+![Our Preliminary Survey] (../img/survey.png "Mental Health Survey")
