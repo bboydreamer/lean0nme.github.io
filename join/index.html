@@ -116,7 +116,7 @@
                   <div class="col-md-12" style="padding-top:75px;">
                       <span class="signup-span">Help us by providing a bit of information. Nobody will see this except our matching algorithm.</span><br><br>
                       <br>
-                      <img src="GET /v2.0/{user-id}/picture HTTP/1.1 Host: graph.facebook.com" />
+                      <!--<img src="GET /v2.0/{user-id}/picture HTTP/1.1 Host: graph.facebook.com" />-->
                       <br>
                       <a class="btn btn-fb" onClick="fb_connect()" role="button">Fill Using Facebook</a>
                       <br>
@@ -187,7 +187,7 @@
                           </div>
                           <br>
                           <br>
-                          <button type="submit" class="btn btn-primary" onClick="var usersRef = ref.child("users");
+                          <button type="submit" class="btn btn-default" onClick="var usersRef = ref.child("users");
                           usersRef.set({
                             alanisawesome: {
                               full_name: inputFirst.value,
