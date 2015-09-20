@@ -9,7 +9,7 @@ body {
     height: 100%;
     font-family: Raleway,"Helvetica Neue",Helvetica,Arial,sans-serif;
     color: #fff;
-    background-color: #106556;
+    background-color: #FF6A6A;
     font-size: 18px;
 }
 
@@ -47,7 +47,7 @@ p {
 }
 
 a {
-    color: #42dca3;
+    color: #FF6A6A;
     -webkit-transition: all .2s ease-in-out;
     -moz-transition: all .2s ease-in-out;
     transition: all .2s ease-in-out;
@@ -56,7 +56,7 @@ a {
 a:hover,
 a:focus {
     text-decoration: none;
-    color: #1d9b6c;
+    color: #42dca3;
 }
 
 .light {
@@ -67,7 +67,7 @@ a:focus {
     margin-bottom: 0;
     border-bottom: 1px solid rgba(255,255,255,.3);
     font-family: Raleway,"Helvetica Neue",Helvetica,Arial,sans-serif;
-    background-color: #106556;
+    background-color: #990000;
 }
 
 .navbar-custom .navbar-brand {
@@ -102,7 +102,7 @@ a:focus {
 
 .navbar-custom .nav li a:hover {
     outline: 0;
-    color: rgba(255,255,255,.8);
+    color: #FF4141;
     background-color: transparent;
 }
 
@@ -117,7 +117,7 @@ a:focus {
 }
 
 .navbar-custom .nav li.active a {
-    background-color: rgba(255,255,255,.3);
+    background-color: #FF4141;
 }
 
 .navbar-custom .nav li.active a:hover {
@@ -138,7 +138,7 @@ a:focus {
     .navbar-custom.top-nav-collapse {
         padding: 0;
         border-bottom: 1px solid rgba(255,255,255,.3);
-        background: #106556;
+        background: #990000;
     }
 }
 
@@ -150,7 +150,7 @@ a:focus {
     text-align: center;
     color: #fff;
     /*background: url(../img/intro-bg.jpg) no-repeat bottom center scroll;*/
-    background-color: #5cc2a6;
+    background-color: #FF6A6A;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -193,7 +193,7 @@ a:focus {
     text-align: center;
     color: #fff;
     /*background: url(../img/intro-bg.jpg) no-repeat bottom center scroll;*/
-    background-color: #106556;
+    background-color: #990000;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -220,6 +220,44 @@ a:focus {
         font-size: 40px;
     }
 }
+
+
+.signup {
+    display: table;
+    width: 100%;
+    height: auto;
+    padding: 100px 0;
+    text-align: center;
+    color: black;
+    /*background: url(../img/intro-bg.jpg) no-repeat bottom center scroll;*/
+    background-color: #D6BAC1;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+
+.signup .signup-body {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.signup .signup-body .signup-text {
+    font-size: 18px;
+}
+
+@media(min-width:768px) {
+    .signup {
+        height: 100%;
+        padding: 100px 0;
+    }
+
+    .signup .signup-body .signup-text {
+        font-size: 40px;
+    }
+}
+
 
 .team {
     display: table;
@@ -271,7 +309,7 @@ img.team-pic {
 
 span.person-name {
     font-size: 20px;
-    color: #106556;
+    color: #990000;
 }
 
 span.person-title {
@@ -290,9 +328,9 @@ div.person-blurb {
     height: auto;
     padding: 100px 0;
     text-align: center;
-    color: #5cc2a6;
+    color: #FF6A6A;
     /*background: url(../img/intro-bg.jpg) no-repeat bottom center scroll;*/
-    background-color: #106556;
+    background-color: #990000;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -368,7 +406,7 @@ span.email-result{
     -moz-animation-timing-function: linear;
 }
 
-@-webkit-keyframes pulse {    
+@-webkit-keyframes pulse {
     0% {
         -webkit-transform: scale(1);
         transform: scale(1);
@@ -385,7 +423,7 @@ span.email-result{
     }
 }
 
-@-moz-keyframes pulse {    
+@-moz-keyframes pulse {
     0% {
         -moz-transform: scale(1);
         transform: scale(1);
@@ -413,17 +451,31 @@ span.email-result{
 }
 
 .btn-default {
-    border: 1px solid #42dca3;
-    color: #42dca3;
+    border: 1px solid #FF6A6A;
+    color: #FF6A6A;
     background-color: transparent;
 }
 
 .btn-default:hover,
 .btn-default:focus {
-    border: 1px solid #42dca3;
+    border: 1px solid #fff;
     outline: 0;
     color: #000;
-    background-color: #42dca3;
+    background-color: #fff;
+}
+
+.btn-fb {
+    border: 1px solid #990000;
+    color: #990000;
+    background-color: transparent;
+}
+
+.btn-fb:hover,
+.btn-fb:focus {
+    border: 1px solid #fff;
+    outline: 0;
+    color: #000;
+    background-color: #fff;
 }
 
 ul.banner-social-buttons {
@@ -483,7 +535,7 @@ body {
 /*Adapting to Olive*/
 
 img.olive-logo {
-    width: 300px;
+    width: 700px;
 }
 
 img.olive-logo-nav {
@@ -524,7 +576,7 @@ input.email-input {
     border-top-style: none;
     border-top-width: 0px;
     box-sizing: border-box;
-    color: rgb(255, 255, 255);
+    color: #fff;
     cursor: auto;
     display: inline-block;
     font-style: normal;
@@ -557,16 +609,16 @@ input.email-input {
 
 
 ::-webkit-input-placeholder {
-    color: rgba(92, 194, 166, 0.3);
+    color: rgba(255, 147, 147, 0.3);
 }
 :-moz-placeholder {
-    color: rgba(92, 194, 166, 0.3);
+    color: rgba(255, 147, 147, 0.3);
 }
 ::-moz-placeholder {
-    color: rgba(92, 194, 166, 0.3);
+    color: rgba(255, 147, 147, 0.3);
 }
 :-ms-input-placeholder {
-    color: rgba(92, 194, 166, 0.3);
+    color: rgba(255, 147, 147, 0.3);
 }
 
 
@@ -611,3 +663,7 @@ span.about-span {
     }
 }
 
+.sr-only #inputFirst-textarea{
+  width: 300px;
+  height: 100px;
+}

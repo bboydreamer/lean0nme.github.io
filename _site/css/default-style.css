@@ -52,7 +52,7 @@ a {
 
 .topsection{
 	padding: 20px;
-	background-color: #106556;
+	background-color: #FF6A6A;
 }
 
 .topbar .left {
@@ -117,7 +117,7 @@ a {
 }
 
 .topbar .name {
-	display: inline-block;	
+	display: inline-block;
 	font-family: Raleway, 'Lato', sans-serif;
 	font-size: 14px;
 	vertical-align: top;
@@ -126,7 +126,7 @@ a {
 }
 
 .topsection .name {
-	display: block;	
+	display: block;
 	font-family: Raleway, 'Lato', sans-serif;
 	font-weight: bold;
 	font-size: 21px;
@@ -239,7 +239,7 @@ p {
 }
 
 .post h6 {
-	/*caption*/	
+	/*caption*/
 	text-align: center;
 	font-family: Raleway, 'Lato', sans-serif;
 	color: #808080;
@@ -267,12 +267,12 @@ p {
 	color: #979797;
 	font-size: 14px;
 	text-decoration: none;
-	
+
 	-moz-transition: all ease-in 0.3s;
 	-webkit-transition: all ease-in 0.3s;
 	transition: all ease-in 0.3s;
 	transition: border-color ease-in 0.3s;
-	
+
 }
 
 .btn-read:hover{
@@ -315,7 +315,7 @@ p {
 
 .footer {
 	/*border-top: 1px solid #979797;*/
-	background-color: #F7F7F7;
+	background-color: #FF6A6A;
 	padding: 10px;
 }
 
@@ -421,7 +421,7 @@ img.olive-logo {
 	}
 
 	.topbar .name {
-		display: inline-block;	
+		display: inline-block;
 		font-family: Raleway, 'Lato', sans-serif;
 		font-size: 14px;
 		vertical-align: top;
@@ -430,7 +430,7 @@ img.olive-logo {
 	}
 
 	.topsection .name {
-		display: block;	
+		display: block;
 		font-family: Raleway, 'Lato', sans-serif;
 		font-weight: bold;
 		font-size: 21px;
@@ -534,7 +534,7 @@ img.olive-logo {
 	}
 
 	.post h6 {
-		/*caption*/	
+		/*caption*/
 		text-align: center;
 		font-family: Raleway, 'Lato', sans-serif;
 		color: #808080;
