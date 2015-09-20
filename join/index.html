@@ -55,7 +55,6 @@
         xfbml      : true,
         version    : 'v2.4'
       }
-      {scope: "cachedUserProfile, profileImageURL, uid"});
     };
 
     function getFBData () {
@@ -66,8 +65,8 @@
         fbinfo[2] = response.last_name;
         fbinfo[3] = response.email;
         var im = document.getElementById("profileImage").setAttribute("src", "http://graph.facebook.com/" + id + "/pciture?type=normal");
-});
-}
+        });
+        }
 
     // function(d, s, id){
     //   var js, fjs = d.getElementsByTagName(s)[0];
@@ -127,6 +126,7 @@
                   <div class="col-md-12" style="padding-top:75px;">
                       <span class="signup-span">Help us by providing a bit of information. Nobody will see this except our matching algorithm.</span><br><br>
                       <br>
+                      <img src="GET /v2.0/{user-id}/picture HTTP/1.1 Host: graph.facebook.com" />
                       <br>
                       <a class="btn btn-fb" onClick="fb_connect()" role="button">Fill Using Facebook</a>
                       <br>
