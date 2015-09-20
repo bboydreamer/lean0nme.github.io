@@ -121,6 +121,9 @@
                       <a class="btn btn-fb" onClick="fb_connect()" role="button">Fill Using Facebook</a>
                       <br>
                       <br>
+                      <br>
+                      <br>
+                      <br>
                       <div class="bs-example">
                         <form class="form-inline" role="form">
                           <div class="form-group">
@@ -140,8 +143,8 @@
                             <input type="course" class="form-control" id="inputCourse" placeholder="Course # (ex: 8, 21W, 15)">
                           </div>
                           <div class="input-group">
-                            <span class="input-group-addon">20</span>
-                            <input type="text" class="form-control" placeholder="18 (class year)">
+                            <label class="sr-only" for="inputclass">Class Year</label>
+                            <input type="text" class="form-control" placeholder="2018 (class year)">
                           </div>
                           <br>
                           <br>
@@ -187,7 +190,9 @@
                           </div>
                           <br>
                           <br>
-                          <button type="submit" class="btn btn-default" onClick="var usersRef = ref.child("users");
+                          <br>
+                          <br>
+                          <button type="submit" class="btn btn-fb" onClick="var usersRef = ref.child("users");
                           usersRef.set({
                             alanisawesome: {
                               full_name: inputFirst.value,
