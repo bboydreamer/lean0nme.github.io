@@ -124,6 +124,81 @@
                       <div class="bs-example">
                         <form class="form-inline" role="form">
                           <div class="form-group">
+                            <label class="sr-only" for="inputFirstName">First Name</label>
+                            <input type="firstname" class="form-control" id="inputFirst" placeholder="First Name">
+                          </div>
+                          <div class="form-group">
+                            <label class="sr-only" for="inputLastName">Last Name</label>
+                            <input type="lastname" class="form-control" id="inputLastName" placeholder="Last Name">
+                          </div>
+                          <div class="form-group">
+                            <label class="sr-only" for="inputKerberos">Kerberos</label>
+                            <input type="kerberos" class="form-control" id="inputKerberos" placeholder="Kerberos">
+                          </div>
+                          <div class="form-group">
+                            <label class="sr-only" for="inputCourse">Course</label>
+                            <input type="course" class="form-control" id="inputCourse" placeholder="Course # (ex: 8, 21W, 15)">
+                          </div>
+                          <div class="input-group">
+                            <span class="input-group-addon">20</span>
+                            <input type="text" class="form-control" placeholder="18 (class year)">
+                          </div>
+                          <br>
+                          <br>
+                          <div class="form-group">
+                            <label class="sr-only" for="inputHometown">Hometown</label>
+                            <input type="Hometown" class="form-control" id="Hometown" placeholder="Hometown">
+                          </div>
+                          <div class="form-group">
+                            <label class="sr-only" for="inputFSILG">FSILG</label>
+                            <input type="FSILG" class="form-control" id="inputFSILG" placeholder="FSILG">
+                          </div>
+                          <div class="form-group">
+                            <label class="sr-only" for="Dorm">Dorm</label>
+                            <input type="Dorm" class="form-control" id="inputDorm" placeholder="Dorm">
+                          </div>
+                          <br>
+                          <br>
+                          <div class="form-group">
+                            <label class="sr-only" for="inputEthnicity">Ethnicity</label>
+                            <input type="Ethnicity" class="form-control" id="inputEthnicity" placeholder="Ethnicity">
+                          </div>
+                          <div class="form-group">
+                            <label class="sr-only" for="inputGender">Gender</label>
+                            <input type="Gender" class="form-control" id="inputGender" placeholder="Gender (ex: m, f, other)">
+                          </div>
+                          <div class="form-group">
+                            <label class="sr-only" for="inputIdentity">Identity</label>
+                            <input type="Identity" class="form-control" id="Identity" placeholder="LBGTQA...">
+                          </div>
+                          <br>
+                          <br>
+                          <div class="form-group">
+                            <label class="sr-only" for="inputAthletics">Athletics</label>
+                            <input type="Athletics" class="form-control" id="Athletics" placeholder="Sport and Club Teams">
+                          </div>
+                          <div class="form-group">
+                            <label class="sr-only" for="inputClubs">Clubs</label>
+                            <input type="Clubs" class="form-control" id="Clubs" placeholder="Clubs, Activities">
+                          </div>
+                          <div class="form-group">
+                            <label class="sr-only" for="inputbuzz">Buzz</label>
+                            <input type="Buzz" class="form-control" id="Buzz" placeholder="Buzzwords to help match">
+                          </div>
+                          <br>
+                          <br>
+                          <button type="submit" class="btn btn-primary" style="background-color: #990000" onClick="var usersRef = ref.child("users");
+                          usersRef.set({
+                            alanisawesome: {
+                              full_name: inputFirst.value,
+                              full_name: "Alan Turing"
+                            }}
+                          });">Lean On Me!</button>
+                          <br>
+                      <!--checkboxes
+                      <div class="bs-example">
+                        <form class="form-inline" role="form">
+                          <div class="form-group">
                             <label class="sr-only" for="inputFirstName">$authData.uid</label>
                             <input type="firstname" class="form-control" id="inputFirst" placeholder="select">
                           </div>
@@ -220,7 +295,8 @@
                           <div class="checkbox">
                             <label><input type="checkbox">Remember me</label>
                           </div>
-                        </form>
+                        </form> -->
+                      </div>
                   </div>
               </div>
           </div>
