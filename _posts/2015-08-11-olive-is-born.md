@@ -1,12 +1,12 @@
 ---
-title: Our Vision for Olive
+title: Lean On
 layout: post-default
 ---
 
-At Olive, our goal is to fundamentally change the way we think about healthcare. 
+MIT has a history of anecdotal evidence pointing to student support deficiencies with regard to services such as mental health and counseling. Some problems are not unique to MIT, such as service barriers due to office location or scheduling constraints. Such systematic issues in traditional counseling services indicate the need for a more immediate and convenient system for administering support. However, such obstacles have historically been overcome by additional staff and other workarounds, and typically it seems that such practices are sufficient to compensate. Yet there exist additional problems which show the current system for mental health support to be incomplete.
 
-Before anything else, our quality of life depends on our well-being. So to us, it's disappointing that healthcare has been one of the slowest moving sectors of our time. We have built massive data centers, designed cutting-edge algorithms, and put a mobile computer in the hands of nearly every single person on this planet to export thought-bites of 140 characters. But when it comes to our health, we are still dealing with tools that look like and work like they were borrowed from the 80's. That sucks.
+These problems are partially enumerated in a recent article of The Tech, which cites the Healthy Minds Study reporting that 49% of MIT undergraduates polled “‘question how serious my needs are’ as a barrier to seeking help” (implying a misconception that some problems aren’t serious enough to seek help for). In addition to students who are fearful of seeking help, some students who receive help are required to have return visits which may or may not be effective once the initial problem has already been dealt with. Anecdotal accounts point out that counselors may be disinterested in follow up appointments, or perhaps students are at fault themselves for failing to make an effort to continuously be open and honest with a professional whom they only know for and from one hour sessions each week. In any case, a disconnect can understandably exist, prompting students in many cases to prefer to check in with a fellow student or friend instead of a professional service to get help dealing with low-risk issues and similar forms of stress.
 
-Olive isn't about incremental change. We believe in quantum leaps. We are here because 50% of people shouldn't have a life expectancy of 5 years after being diagnosed with heart failure. We are here because there shouldn't be a person dying from diabetes every 7 seconds. We are here because your odds against cancer shouldn't be a coin flip.
+We talked to 160 students on campus and found that an anonymous texting network could help supplement existing services and friend support networks. The results are displayed below.
 
-Olive is our vehicle to challenge the absurdities of the status quo and build a better system. We're excited to help everyone regain control of their health and defeat human disease. 
+![Our Preliminary Survey] (/img/survey.png) "Mental Health Survey")
