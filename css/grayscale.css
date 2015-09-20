@@ -9,7 +9,7 @@ body {
     height: 100%;
     font-family: Raleway,"Helvetica Neue",Helvetica,Arial,sans-serif;
     color: #fff;
-    background-color: #e57f80;
+    background-color: #FF6A6A;
     font-size: 18px;
 }
 
@@ -47,7 +47,7 @@ p {
 }
 
 a {
-    color: #e57f80;
+    color: #FF6A6A;
     -webkit-transition: all .2s ease-in-out;
     -moz-transition: all .2s ease-in-out;
     transition: all .2s ease-in-out;
@@ -67,7 +67,7 @@ a:focus {
     margin-bottom: 0;
     border-bottom: 1px solid rgba(255,255,255,.3);
     font-family: Raleway,"Helvetica Neue",Helvetica,Arial,sans-serif;
-    background-color: #db4c4d;
+    background-color: #CC0000;
 }
 
 .navbar-custom .navbar-brand {
@@ -138,7 +138,7 @@ a:focus {
     .navbar-custom.top-nav-collapse {
         padding: 0;
         border-bottom: 1px solid rgba(255,255,255,.3);
-        background: #db4c4d;
+        background: #CC0000;
     }
 }
 
@@ -150,7 +150,7 @@ a:focus {
     text-align: center;
     color: #fff;
     /*background: url(../img/intro-bg.jpg) no-repeat bottom center scroll;*/
-    background-color: #e57f80;
+    background-color: #FF6A6A;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -193,7 +193,7 @@ a:focus {
     text-align: center;
     color: #fff;
     /*background: url(../img/intro-bg.jpg) no-repeat bottom center scroll;*/
-    background-color: #db4c4d;
+    background-color: #CC0000;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -309,7 +309,7 @@ img.team-pic {
 
 span.person-name {
     font-size: 20px;
-    color: #db4c4d;
+    color: #CC0000;
 }
 
 span.person-title {
@@ -328,9 +328,9 @@ div.person-blurb {
     height: auto;
     padding: 100px 0;
     text-align: center;
-    color: #e57f80;
+    color: #FF6A6A;
     /*background: url(../img/intro-bg.jpg) no-repeat bottom center scroll;*/
-    background-color: #db4c4d;
+    background-color: #CC0000;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -465,8 +465,8 @@ span.email-result{
 }
 
 .btn-fb {
-    border: 1px solid #db4c4d;
-    color: #db4c4d;
+    border: 1px solid #CC0000;
+    color: #CC0000;
     background-color: transparent;
 }
 
