@@ -360,7 +360,7 @@ img.olive-logo {
 
 	.topsection{
 		padding: 20px;
-		background-color: #106556;
+		background-color: #cc0000;
 	}
 
 	.topbar .left {
@@ -696,7 +696,7 @@ img.olive-logo-nav {
     .navbar-custom.top-nav-collapse {
         padding: 0;
         border-bottom: 1px solid rgba(255,255,255,.3);
-        background: #106556;
+        background: #cc0000;
     }
 
     img.olive-logo-nav {
