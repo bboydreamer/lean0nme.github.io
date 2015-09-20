@@ -450,6 +450,10 @@ span.email-result{
     transition: all .3s ease-in-out;
 }
 
+.btn a{
+  color: #fff;
+}
+
 .btn-default {
     border: 1px solid #FFAAAA;
     color: #FFAAAA;
