@@ -49,12 +49,13 @@
 
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
   <script>
-    window.fbAsyncInit = function() {
+    window.fbAsyncInit = function(authData) {
       FB.init({
         appId      : '178328532500643',
         xfbml      : true,
         version    : 'v2.4'
-      });
+      }
+      {scope: "cachedUserProfile, profileImageURL, uid"});
     };
 
     // function(d, s, id){
@@ -118,11 +119,12 @@
                       <br>
                       <a class="btn btn-fb" onClick="fb_connect()" role="button">Fill Using Facebook</a>
                       <br>
+                      <img src="cinqueterre.jpg" class="img-thumbnail" alt="Cinque Terre" width="304" height="236">
                       <br>
                       <div class="bs-example">
                         <form class="form-inline" role="form">
                           <div class="form-group">
-                            <label class="sr-only" for="inputFirstName">First Name</label>
+                            <label class="sr-only" for="inputFirstName">$authData.uid</label>
                             <input type="firstname" class="form-control" id="inputFirst" placeholder="First Name">
                           </div>
                           <div class="form-group">
