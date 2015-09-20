@@ -67,7 +67,7 @@ a:focus {
     margin-bottom: 0;
     border-bottom: 1px solid rgba(255,255,255,.3);
     font-family: Raleway,"Helvetica Neue",Helvetica,Arial,sans-serif;
-    background-color: #CC0000;
+    background-color: #e57f80;
 }
 
 .navbar-custom .navbar-brand {
@@ -138,7 +138,7 @@ a:focus {
     .navbar-custom.top-nav-collapse {
         padding: 0;
         border-bottom: 1px solid rgba(255,255,255,.3);
-        background: #CC0000;
+        background: #e57f80;
     }
 }
 
@@ -193,7 +193,7 @@ a:focus {
     text-align: center;
     color: #fff;
     /*background: url(../img/intro-bg.jpg) no-repeat bottom center scroll;*/
-    background-color: #CC0000;
+    background-color: #e57f80;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -309,7 +309,7 @@ img.team-pic {
 
 span.person-name {
     font-size: 20px;
-    color: #CC0000;
+    color: #e57f80;
 }
 
 span.person-title {
@@ -330,7 +330,7 @@ div.person-blurb {
     text-align: center;
     color: #FF6A6A;
     /*background: url(../img/intro-bg.jpg) no-repeat bottom center scroll;*/
-    background-color: #CC0000;
+    background-color: #e57f80;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -465,8 +465,8 @@ span.email-result{
 }
 
 .btn-fb {
-    border: 1px solid #CC0000;
-    color: #CC0000;
+    border: 1px solid #e57f80;
+    color: #e57f80;
     background-color: transparent;
 }
 
