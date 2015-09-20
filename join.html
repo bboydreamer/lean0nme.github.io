@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <link rel="icon" type="image/png" href="img/favicon.png">
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Despite all of our technological advances, healthcare is stull stuck in the twentieth century. Olive aims to change that. By leveraging cutting edge data analytics and artificial intelligence, Olive reinvents care from the ground up. Olive is the future of healthcare.">
+    <meta name="author" content="Lean On Me">
+
+    <meta property="og:title" content="Meet Olive, your personal healthcare companion" />
+    <meta property="og:site_name" content="Olive Health"/>
+    <meta property="og:url" content="http://olive.ai" />
+    <meta property="og:description" content="Despite all of our technological advances, healthcare is stull stuck in the twentieth century. Olive aims to change that. By leveraging cutting edge data analytics and artificial intelligence, Olive reinvents care from the ground up. Olive is the future of healthcare."/>
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:image" content="img/logo.png" />
+    <meta property="fb:app_id" content="1469413380046450" />
+    <title>Lean 0n Me</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/grayscale.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+
+    <!--signups-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script type='text/javascript' src='https://cdn.firebase.com/js/client/1.0.17/firebase.js'></script>
+    <script type='text./javascript' src='https://cdn.firebase.com/js/simple-login/1.6.1/firebase-simple-login.js'></script>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+  <script>
+    window.fbAsyncInit = function() {
+      FB.init({
+        appId      : '178328532500643',
+        xfbml      : true,
+        version    : 'v2.4'
+      });
+    };
+
+    // function(d, s, id){
+    //   var js, fjs = d.getElementsByTagName(s)[0];
+    //   if (d.getElementById(id)) {return;}
+    //   js = d.createElement(s); js.id = id;
+    //   js.src = "//connect.facebook.net/en_US/sdk.js";
+    //   fjs.parentNode.insertBefore(js, fjs);
+    // }(document, 'script', 'facebook-jssdk');
+  </script>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                    <i class="fa fa-bars"></i>
+                </button>
+                <!-- <a class="navbar-brand page-scroll" href="#page-top">
+                    <i class="fa fa-play-circle"></i>  <span class="light">Start</span> Bootstrap
+                </a> -->
+                <a class="navbar-brand page-scroll" href="index.html #page-top">
+                    <img class="olive-logo-nav" src="img/icon.png">
+                </a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+                <ul class="nav navbar-nav">
+                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="index.html #about">About</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="index.html #team">Team</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="index.html #contact">Contact</a>
+                    </li>
+                    <li>
+                        <a href="/blog">Blog</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Intro Header -->
+    <header class="intro">
+      <div class="signup-body">
+          <div class="container">
+              <div class="row">
+                  <div class="col-md-12" style="padding-top:75px;">
+                      <span class="signup-span">Help us by providing a bit of information. Nobody will see this except our matching algorithm.</span><br><br>
+                      <br>
+                      <br>
+                      <a class="btn btn-fb" onClick="fb_connect()" role="button">Fill Using Facebook</a>
+                      <br>
+                      <br>
+                      <div class="bs-example">
+                        <form class="form-inline" role="form">
+                          <div class="form-group">
+                            <label class="sr-only" for="inputFirstName">First Name</label>
+                            <input type="firstname" class="form-control" id="inputFirst" placeholder="First Name">
+                          </div>
+                          <div class="form-group">
+                            <label class="sr-only" for="inputLastName">Last Name</label>
+                            <input type="lastname" class="form-control" id="inputLastName" placeholder="Last Name">
+                          </div>
+                          <div class="form-group">
+                            <label class="sr-only" for="inputKerberos">Kerberos</label>
+                            <input type="kerberos" class="form-control" id="inputKerberos" placeholder="Kerberos">
+                          </div>
+                          <div class="form-group">
+                            <label class="sr-only" for="inputCourse">Course</label>
+                            <input type="course" class="form-control" id="inputCourse" placeholder="Course # (ex: 8, 21W, 15)">
+                          </div>
+                          <div class="input-group">
+                            <span class="input-group-addon">20</span>
+                            <input type="text" class="form-control" placeholder="18 (class year)">
+                          </div>
+                          <br>
+                          <br>
+                          <div class="form-group">
+                            <label class="sr-only" for="inputHometown">Hometown</label>
+                            <input type="Hometown" class="form-control" id="Hometown" placeholder="Hometown">
+                          </div>
+                          <div class="form-group">
+                            <label class="sr-only" for="inputFSILG">FSILG</label>
+                            <input type="FSILG" class="form-control" id="inputFSILG" placeholder="FSILG">
+                          </div>
+                          <div class="form-group">
+                            <label class="sr-only" for="Dorm">Dorm</label>
+                            <input type="Dorm" class="form-control" id="inputDorm" placeholder="Dorm">
+                          </div>
+                          <br>
+                          <br>
+                          <div class="form-group">
+                            <label class="sr-only" for="inputEthnicity">Ethnicity</label>
+                            <input type="Ethnicity" class="form-control" id="inputEthnicity" placeholder="Ethnicity">
+                          </div>
+                          <div class="form-group">
+                            <label class="sr-only" for="inputGender">Gender</label>
+                            <input type="Gender" class="form-control" id="inputGender" placeholder="Gender (ex: m, f, other)">
+                          </div>
+                          <div class="form-group">
+                            <label class="sr-only" for="inputIdentity">Identity</label>
+                            <input type="Identity" class="form-control" id="Identity" placeholder="LBGTQA...">
+                          </div>
+                          <br>
+                          <br>
+                          <div class="form-group">
+                            <label class="sr-only" for="inputAthletics">Athletics</label>
+                            <input type="Athletics" class="form-control" id="Athletics" placeholder="Sport and Club Teams">
+                          </div>
+                          <div class="form-group">
+                            <label class="sr-only" for="inputClubs">Clubs</label>
+                            <input type="Clubs" class="form-control" id="Clubs" placeholder="Clubs, Activities">
+                          </div>
+                          <div class="form-group">
+                            <label class="sr-only" for="inputbuzz">Buzz</label>
+                            <input type="Buzz" class="form-control" id="Buzz" placeholder="Buzzwords to help match">
+                          </div>
+                          <br>
+                          <br>
+                          <button type="submit" class="btn btn-primary" style="background-color: #990000">Lean On Me!</button>
+                          <br>
+                          <div class="checkbox">
+                            <label><input type="checkbox">Remember me</label>
+                          </div>
+                        </form>
+                  </div>
+              </div>
+          </div>
+      </div>
+    </header>
+
+    <!-- Inputs: kerb, name, class major, gender, FSILG, club, LBGTQA, athlete, Hometown, ethnicity, dorm, essay Q-->
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="js/jquery.easing.min.js"></script>
+
+    <!-- Firebase -->
+    <script src="https://cdn.firebase.com/js/client/2.2.9/firebase.js"></script>
+
+    <!-- Custom JavaScript -->
+    <script src="js/main.js"></script>
+
+    <script type="text/javascript">
+    function fb_connect(){
+      var ref = new Firebase("https://leanonmedb.firebaseio.com");
+      ref.authWithOAuthPopup("facebook", function(error, authData) {
+        if (error) {
+          if (error.code === "TRANSPORT_UNAVAILABLE") {
+            // fall-back to browser redirects, and pick up the session
+            // automatically when we come back to the origin page
+            ref.authWithOAuthRedirect("facebook", function(error) {
+              console.log("Login Failed!", error);
+            });
+          }
+        } else {
+          // the access token will allow us to make Open Graph API calls
+          console.log(authData.facebook.accessToken);
+        }
+      }, {
+        scope: "email,user_likes" // the permissions requested
+      });
+    }
+  </script>
+    </script>
+
+</body>
+
+</html>
