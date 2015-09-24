@@ -221,6 +221,73 @@ a:focus {
     }
 }
 
+.faq {
+    display: table;
+    width: 100%;
+    height: auto;
+    padding: 100px 0;
+    text-align: left;
+    color: #fff;
+    /*background: url(../img/intro-bg.jpg) no-repeat bottom center scroll;*/
+    background-color: #FF6A6A;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+
+.faq .faq-body {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.faq .faq-body .faq-text {
+    font-size: 18px;
+}
+
+@media(min-width:768px) {
+    .faq {
+        height: 100%;
+        padding: 100px 0;
+    }
+
+    .faq .faq-body .faq-text {
+        font-size: 40px;
+    }
+}
+
+span.faq-span {
+    font-size: 40px;
+}
+
+
+div.faq-item {
+    padding-top: 50px;
+    text-align: left;
+}
+
+span.faq-question {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+div.faq-answer {
+    font-size: 14px;
+}
+
+a.faq-email {
+    color: #FFF;
+    text-decoration: underline;
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+}
+
+a.faq-email:hover{
+    text-decoration: blink;
+}
 
 .signup {
     display: table;
@@ -539,7 +606,7 @@ body {
 /*Adapting to Olive*/
 
 img.olive-logo {
-    width: 700px;
+    width: 300px;
 }
 
 img.olive-logo-nav {
@@ -644,6 +711,10 @@ span.about-span {
     img.olive-logo-nav {
         height: 30px;
         margin-top: -7px;
+    }
+
+    img.olive-logo {
+        width: 700px;
     }
 
     span.about-span {

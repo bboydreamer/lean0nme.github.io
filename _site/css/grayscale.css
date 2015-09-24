@@ -67,7 +67,7 @@ a:focus {
     margin-bottom: 0;
     border-bottom: 1px solid rgba(255,255,255,.3);
     font-family: Raleway,"Helvetica Neue",Helvetica,Arial,sans-serif;
-    background-color: #990000;
+    background-color: #CC0000;
 }
 
 .navbar-custom .navbar-brand {
@@ -138,7 +138,7 @@ a:focus {
     .navbar-custom.top-nav-collapse {
         padding: 0;
         border-bottom: 1px solid rgba(255,255,255,.3);
-        background: #990000;
+        background: #CC0000;
     }
 }
 
@@ -193,7 +193,7 @@ a:focus {
     text-align: center;
     color: #fff;
     /*background: url(../img/intro-bg.jpg) no-repeat bottom center scroll;*/
-    background-color: #990000;
+    background-color: #CC0000;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -221,6 +221,73 @@ a:focus {
     }
 }
 
+.faq {
+    display: table;
+    width: 100%;
+    height: auto;
+    padding: 100px 0;
+    text-align: left;
+    color: #fff;
+    /*background: url(../img/intro-bg.jpg) no-repeat bottom center scroll;*/
+    background-color: #FF6A6A;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+
+.faq .faq-body {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.faq .faq-body .faq-text {
+    font-size: 18px;
+}
+
+@media(min-width:768px) {
+    .faq {
+        height: 100%;
+        padding: 100px 0;
+    }
+
+    .faq .faq-body .faq-text {
+        font-size: 40px;
+    }
+}
+
+span.faq-span {
+    font-size: 40px;
+}
+
+
+div.faq-item {
+    padding-top: 50px;
+    text-align: left;
+}
+
+span.faq-question {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+div.faq-answer {
+    font-size: 14px;
+}
+
+a.faq-email {
+    color: #FFF;
+    text-decoration: underline;
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+}
+
+a.faq-email:hover{
+    text-decoration: blink;
+}
 
 .signup {
     display: table;
@@ -309,7 +376,7 @@ img.team-pic {
 
 span.person-name {
     font-size: 20px;
-    color: #990000;
+    color: #CC0000;
 }
 
 span.person-title {
@@ -330,7 +397,7 @@ div.person-blurb {
     text-align: center;
     color: #FF6A6A;
     /*background: url(../img/intro-bg.jpg) no-repeat bottom center scroll;*/
-    background-color: #990000;
+    background-color: #CC0000;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -450,9 +517,13 @@ span.email-result{
     transition: all .3s ease-in-out;
 }
 
+.btn a{
+  color: #fff;
+}
+
 .btn-default {
-    border: 1px solid #FF6A6A;
-    color: #FF6A6A;
+    border: 1px solid #FFAAAA;
+    color: #FFAAAA;
     background-color: transparent;
 }
 
@@ -465,8 +536,8 @@ span.email-result{
 }
 
 .btn-fb {
-    border: 1px solid #990000;
-    color: #990000;
+    border: 1px solid #fff;
+    color: #fff;
     background-color: transparent;
 }
 
@@ -475,7 +546,7 @@ span.email-result{
     border: 1px solid #fff;
     outline: 0;
     color: #000;
-    background-color: #fff;
+    background-color: #FFAAAA;
 }
 
 ul.banner-social-buttons {
@@ -535,7 +606,7 @@ body {
 /*Adapting to Olive*/
 
 img.olive-logo {
-    width: 700px;
+    width: 300px;
 }
 
 img.olive-logo-nav {
@@ -640,6 +711,10 @@ span.about-span {
     img.olive-logo-nav {
         height: 30px;
         margin-top: -7px;
+    }
+
+    img.olive-logo {
+        width: 700px;
     }
 
     span.about-span {

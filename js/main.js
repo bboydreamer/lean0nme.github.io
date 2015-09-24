@@ -26,6 +26,7 @@ $(function() {
 
 // Closes the Responsive Menu on Menu Item Click
 $('.navbar-collapse ul li a').click(function() {
+	console.log("hello")
 	$('.navbar-toggle:visible').click();
 });
 
@@ -46,7 +47,7 @@ $("#subscribe").click(function() {
 function signupEmail() {
   var email = $("input.email-input").val();
   $('input.email-input').val("");
-  var firebase = new Firebase('https://olive.firebaseio.com/' + "/emails_landing_page/" + Date.now());
+  var firebase = new Firebase('https://leanonmedb.firebaseio.com/' + "/emails_landing_page/" + Date.now());
   firebase.set(email, function(err){
 		$(".signup-text").hide();
 		$("#email").hide();
