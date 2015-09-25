@@ -113,6 +113,7 @@
     </nav>
 
     <!-- Intro Header -->
+    <div class="materialize-fit">
     <header class="team">
       <div class="signup-body">
           <div class="container">
@@ -374,8 +375,8 @@
                   </div>
                   <div class="col s6">
                     <p>
-                      <input type="checkbox" id="24"/>
-                      <label for="24">MAS - Media Arts and Sciences</label>
+                      <input type="checkbox" id="MAS"/>
+                      <label for="MAS">MAS - Media Arts and Sciences</label>
                     </p>
                   </div>
                 </div>
@@ -389,8 +390,8 @@
                   </div>
                   <div class="col s6">
                     <p>
-                      <input type="checkbox" id="4"/>
-                      <label for="4">STS - Science, Technology, and Society</label>
+                      <input type="checkbox" id="STS"/>
+                      <label for="STS">STS - Science, Technology, and Society</label>
                     </p>
                   </div>
                 </div>
@@ -414,203 +415,10 @@
                   </div> -->
               </form>
             </div>
-
-
-
-              <div class="row">
-                  <div class="col-md-12" style="padding-top:75px;">
-                      <!-- <span class="signup-span">Help us by providing a bit of information. Nobody will see this except our matching algorithm.</span><br><br>
-                      <br> -->
-                      <!--<img src="GET /v2.0/{user-id}/picture HTTP/1.1 Host: graph.facebook.com" />-->
-                      <!-- <br>
-                      <a class="btn btn-fb" onClick="fb_connect()" role="button">Fill Using Facebook</a>
-                      <br>
-                      <br>
-                      <br>
-                      <br>
-                      <div class="bs-example">
-                        <form class="form-inline" role="form">
-                          <div class="form-group">
-                            <label class="sr-only" for="inputFirstName">First Name</label>
-                            <input type="firstname" class="form-control" id="inputFirst" placeholder="First Name">
-                          </div>
-                          <div class="form-group">
-                            <label class="sr-only" for="inputLastName">Last Name</label>
-                            <input type="lastname" class="form-control" id="inputLastName" placeholder="Last Name">
-                          </div>
-                          <div class="form-group">
-                            <label class="sr-only" for="inputKerberos">Kerberos</label>
-                            <input type="kerberos" class="form-control" id="inputKerberos" placeholder="Kerberos">
-                          </div>
-                          <div class="form-group">
-                            <label class="sr-only" for="inputCourse">Course</label>
-                            <input type="course" class="form-control" id="inputCourse" placeholder="Course # (ex: 8, 21W, 15)">
-                          </div>
-                          <div class="input-group">
-                            <label class="sr-only" for="inputclass">Class Year</label>
-                            <input type="text" class="form-control" placeholder="2018 (class year)">
-                          </div>
-                          <br>
-                          <br>
-                          <div class="form-group">
-                            <label class="sr-only" for="inputHometown">Hometown</label>
-                            <input type="Hometown" class="form-control" id="Hometown" placeholder="Hometown">
-                          </div>
-                          <div class="form-group">
-                            <label class="sr-only" for="inputFSILG">FSILG</label>
-                            <input type="FSILG" class="form-control" id="inputFSILG" placeholder="FSILG">
-                          </div>
-                          <div class="form-group">
-                            <label class="sr-only" for="Dorm">Dorm</label>
-                            <input type="Dorm" class="form-control" id="inputDorm" placeholder="Dorm">
-                          </div>
-                          <br>
-                          <br>
-                          <div class="form-group">
-                            <label class="sr-only" for="inputEthnicity">Ethnicity</label>
-                            <input type="Ethnicity" class="form-control" id="inputEthnicity" placeholder="Ethnicity">
-                          </div>
-                          <div class="form-group">
-                            <label class="sr-only" for="inputGender">Gender</label>
-                            <input type="Gender" class="form-control" id="inputGender" placeholder="Gender (ex: m, f, other)">
-                          </div>
-                          <div class="form-group">
-                            <label class="sr-only" for="inputIdentity">Identity</label>
-                            <input type="Identity" class="form-control" id="Identity" placeholder="LBGTQA...">
-                          </div>
-                          <br>
-                          <br>
-                          <div class="form-group">
-                            <label class="sr-only" for="inputAthletics">Athletics</label>
-                            <input type="Athletics" class="form-control" id="Athletics" placeholder="Sport and Club Teams">
-                          </div>
-                          <div class="form-group">
-                            <label class="sr-only" for="inputClubs">Clubs</label>
-                            <input type="Clubs" class="form-control" id="Clubs" placeholder="Clubs, Activities">
-                          </div>
-                          <div class="form-group">
-                            <label class="sr-only" for="inputbuzz">Buzz</label>
-                            <input type="Buzz" class="form-control" id="Buzz" placeholder="Buzzwords to help match">
-                          </div>
-                          <br>
-                          <br>
-                          <br>
-                          <br>
-                          <button type="submit" class="btn btn-fb" title = "Thanks for joining us!"><a href="http://lean0n.me">Lean On Me!</a></button> -->
-                          <!-- onClick="var usersRef = ref.child("users");
-                          usersRef.set({
-                            alanisawesome: {
-                              full_name: inputFirst.value,
-                              full_name: "Alan Turing"
-                            }}
-                          });" -->
-                                              <!--checkboxes
-                      <div class="bs-example">
-                        <form class="form-inline" role="form">
-                          <div class="form-group">
-                            <label class="sr-only" for="inputFirstName">$authData.uid</label>
-                            <input type="firstname" class="form-control" id="inputFirst" placeholder="select">
-                          </div>
-                          <div class="form-group">
-                            <label class="sr-only" for="inputLastName">Last Name</label>
-                            <input type="lastname" class="form-control" id="inputLastName" placeholder="Last Name">
-                          </div>
-                          <div class="form-group">
-                            <label class="sr-only" for="inputKerberos">Kerberos</label>
-                            <input type="kerberos" class="form-control" id="inputKerberos" placeholder="Kerberos">
-                          </div>
-                          <div class="form-group">
-                            <label class="sr-only" for="inputCourse">Course</label>
-                            <input type="course" class="form-control" id="inputCourse" placeholder="Course # (ex: 8, 21W, 15)">
-                          </div>
-                          <div class="checkbox"> Class:
-                            <label><input type="checkbox" id="2015">2015</label>
-                            <label><input type="checkbox" id="2016">2016</label>
-                            <label><input type="checkbox" id="2017">2017</label>
-                            <label><input type="checkbox" id="2018">2018</label>
-                          </div>
-                          <br>
-                          <br>
-                          <div class="form-group">
-                            <div class="checkbox"> Hometown:
-                              <label><input type="checkbox" id="East Coast">East Coast</label>
-                              <label><input type="checkbox" id="West Coast">West Coast</label>
-                              <label><input type="checkbox" id="Midwest">Midwest</label>
-                              <label><input type="checkbox" id="South">South</label>
-                              <label><input type="checkbox" id="Europe">Europe</label>
-                              <label><input type="checkbox" id="Asia">Asia</label>
-                              <label><input type="checkbox" id="Middle East">Middle East</label>
-                              <label><input type="checkbox" id="Africa">Africa</label>
-                              <label><input type="checkbox" id="APAC">APAC</label>
-                              <label><input type="checkbox" id="Rural">Rural</label>
-                              <label><input type="checkbox" id="Suburb">Suburb</label>
-                              <label><input type="checkbox" id="City">City</label>
-                              </div></div>
-                          <div class="form-group">
-                            <label class="sr-only" for="inputFSILG">FSILG</label>
-                            <input type="FSILG" class="form-control" id="inputFSILG" placeholder="FSILG">
-                          </div>
-                          <div class="form-group">
-                            <label class="sr-only" for="Dorm">Dorm/off campus</label>
-                            <input type="Dorm" class="form-control" id="inputDorm" placeholder="Dorm">
-                          </div>
-                          <br>
-                          <br>
-                          <div class="form-group">
-                            <div class="checkbox"> Ethnicity:
-                              <label><input type="checkbox" id="White">White</label>
-                              <label><input type="checkbox" id="Asian">Asian</label>
-                              <label><input type="checkbox" id="Hispanic">Hispanic</label>
-                              <label><input type="checkbox" id="Latino">Latino</label>
-                              <label><input type="checkbox" id="African American">African American</label>
-                              <label><input type="checkbox" id="Native American">Native American</label>
-                              <label><input type="checkbox" id="Middle Eastern">Middle Eastern</label>
-                              <label><input type="checkbox" id="eth_Other">Other</label>
-                              <label><input type="checkbox" id="eth_na">Prefer not to answer</label>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="form-group">
-                            <div class="checkbox"> Identity:
-                              <label><input type="checkbox" id="Lesbian">Lesbian</label>
-                              <label><input type="checkbox" id="Bisexual">Bisexual</label>
-                              <label><input type="checkbox" id="Gay">Gay</label>
-                              <label><input type="checkbox" id="Transgender">Transgender</label>
-                              <label><input type="checkbox" id="Queer">Queer</label>
-                              <label><input type="checkbox" id="Asexual">Asexual</label>
-                              <label><input type="checkbox" id="Male">Male</label>
-                              <label><input type="checkbox" id="Female">Female</label>
-                              <label><input type="checkbox" id="id_other">Other</label>
-                              </div>
-                          </div>
-                          <br>
-                          <br>
-                          <div class="form-group">
-                            <label class="sr-only" for="inputAthletics">Athletics</label>
-                            <input type="Athletics" class="form-control" id="Athletics" placeholder="Sport and Club Teams">
-                          </div>
-                          <div class="form-group">
-                            <label class="sr-only" for="inputClubs">Clubs</label>
-                            <input type="Clubs" class="form-control" id="Clubs" placeholder="Clubs, Activities">
-                          </div>
-                          <div class="form-group">
-                            <label class="sr-only" for="inputbuzz">Buzz</label>
-                            <input type="Buzz" class="form-control" id="Buzz" placeholder="Buzzwords to help match">
-                          </div>
-                          <br>
-                          <br>
-                          <button type="submit" class="btn btn-primary" style="background-color: #990000">Lean On Me!</button>
-                          <br>
-                          <div class="checkbox">
-                            <label><input type="checkbox">Remember me</label>
-                          </div>
-                        </form> -->
-                      </div>
-                  </div>
               </div>
           </div>
+        </header>
       </div>
-    </header>
 
     <!-- Inputs: kerb, name, class major, gender, FSILG, club, LBGTQA, athlete, Hometown, ethnicity, dorm, essay Q-->
 
