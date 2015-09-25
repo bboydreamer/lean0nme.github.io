@@ -9,13 +9,13 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="1528.0171"
-   height="1554.187"
+   width="1455.7012"
+   height="1404.1085"
    id="svg2"
    version="1.1"
    inkscape:version="0.48.5 r10040"
-   sodipodi:docname="favicon.svg"
-   inkscape:export-filename="C:\Users\Andrew\Documents\MIT Fall 2015\Peer Support Network\favicon.png"
+   sodipodi:docname="favicon_2.svg"
+   inkscape:export-filename="C:\lean\lean0nme.github.io\img\favicon-3.png"
    inkscape:export-xdpi="90"
    inkscape:export-ydpi="90">
   <defs
@@ -98,14 +98,14 @@
   </defs>
   <sodipodi:namedview
      id="base"
-     pagecolor="#000000"
+     pagecolor="#ff6a6a"
      bordercolor="#666666"
      borderopacity="1.0"
-     inkscape:pageopacity="0.83921569"
+     inkscape:pageopacity="1"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.16"
-     inkscape:cx="3596.3443"
-     inkscape:cy="571.04889"
+     inkscape:zoom="0.22627417"
+     inkscape:cx="1170.0058"
+     inkscape:cy="541.46027"
      inkscape:document-units="px"
      inkscape:current-layer="g4299"
      showgrid="false"
@@ -116,8 +116,8 @@
      inkscape:window-y="-8"
      inkscape:window-maximized="1"
      fit-margin-top="50"
-     fit-margin-left="450"
-     fit-margin-right="450"
+     fit-margin-left="200"
+     fit-margin-right="200"
      fit-margin-bottom="50" />
   <metadata
      id="metadata7">
@@ -127,7 +127,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -135,7 +135,7 @@
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(2607.9169,279.53374)">
+     transform="translate(2497.2209,204.87112)">
     <text
        sodipodi:linespacing="125%"
        id="text3003"
@@ -156,79 +156,6 @@
         <g
            id="g4299"
            transform="translate(77.679071,186.91527)">
-          <g
-             transform="matrix(0.64538388,0,0,0.64538388,2.9838896,581.00147)"
-             id="g4285">
-            <g
-               transform="translate(-941.66576,-20.576118)"
-               id="g4047">
-              <g
-                 id="g4023"
-                 transform="translate(0,-74)">
-                <g
-                   transform="translate(-729.6875,-56.25)"
-                   id="g4057">
-                  <rect
-                     y="570.43469"
-                     x="2201.1775"
-                     height="610.92407"
-                     width="37.645134"
-                     id="rect3165"
-                     style="fill:#8f8f8f;fill-opacity:0;stroke:#ffffff;stroke-width:4;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;filter:url(#filter3945)" />
-                  <rect
-                     transform="matrix(0.50869775,0,0,1,1082.0932,0)"
-                     y="576.35968"
-                     x="2185"
-                     height="600"
-                     width="17.5"
-                     id="rect3167"
-                     style="fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:0.60000002;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;filter:url(#filter3941)" />
-                  <rect
-                     transform="matrix(0.50869775,0,0,1,1125.9193,1.9978235e-5)"
-                     y="576.35968"
-                     x="2185"
-                     height="600"
-                     width="17.5"
-                     id="rect3167-8"
-                     style="fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:0.60000002;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;filter:url(#filter3941-9)" />
-                  <rect
-                     ry="6.5637717"
-                     y="626.35974"
-                     x="2212.5"
-                     height="32.08955"
-                     width="15.625"
-                     id="rect3983"
-                     style="fill:#ffffff;fill-opacity:0;stroke:#ffffff;stroke-width:2;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0" />
-                  <rect
-                     ry="3.5290487"
-                     y="628.85968"
-                     x="2220.625"
-                     height="26.949099"
-                     width="6.875"
-                     id="rect3985"
-                     style="fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:0.60793722;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0" />
-                  <rect
-                     rx="11.813199"
-                     ry="10.56491"
-                     y="695.12677"
-                     x="2208.1248"
-                     height="24.090229"
-                     width="23.626398"
-                     id="rect3983-9"
-                     style="fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:0.74743205;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0" />
-                  <rect
-                     rx="11.813199"
-                     ry="10.56491"
-                     y="742.93958"
-                     x="2208.4368"
-                     height="24.090229"
-                     width="23.626398"
-                     id="rect3983-9-8"
-                     style="fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:0.74743205;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0" />
-                </g>
-              </g>
-            </g>
-          </g>
           <g
              id="g3178"
              transform="matrix(-0.47291438,0,0,0.47291438,369.28781,851.20925)">
