@@ -289,6 +289,28 @@ a.faq-email:hover{
     text-decoration: blink;
 }
 
+span.intro-phone {
+    font-size: 50px;
+}
+
+@media(min-width:768px) {
+    .intro-phone {
+        font-size: 90px;
+    }
+}
+
+a.intro-phone {
+    color: #FFF;
+    text-decoration: none;
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+}
+
+a.intro-phone:hover{
+    text-decoration: ;
+}
+
 .signup {
     display: table;
     width: 100%;
@@ -529,10 +551,10 @@ span.email-result{
 
 .btn-default:hover,
 .btn-default:focus {
-    border: 1px solid #fff;
     outline: 0;
-    color: #000;
-    background-color: #fff;
+    color: #fff;
+    background-color: #FF4141;
+    border: 1px solid #FF4141;
 }
 
 .btn-fb {
@@ -543,10 +565,10 @@ span.email-result{
 
 .btn-fb:hover,
 .btn-fb:focus {
-    border: 1px solid #fff;
     outline: 0;
-    color: #000;
-    background-color: #FFAAAA;
+    color: #fff;
+    background-color: #FF4141;
+    border: 1px solid #FF4141;
 }
 
 ul.banner-social-buttons {
@@ -606,7 +628,7 @@ body {
 /*Adapting to Olive*/
 
 img.olive-logo {
-    width: 300px;
+    width: 240px;
 }
 
 img.olive-logo-nav {
@@ -714,7 +736,7 @@ span.about-span {
     }
 
     img.olive-logo {
-        width: 700px;
+        width: 360px;
     }
 
     span.about-span {
