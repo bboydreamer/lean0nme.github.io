@@ -3,8 +3,6 @@ description: "Lean On Me Blog"
 
 url: "http://lean0n.me"
 
-baseurl: /blog
-
 paginate: 5
 paginate_path: "blog/page:num/"
 markdown: rdiscount
