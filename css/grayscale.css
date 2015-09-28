@@ -543,6 +543,26 @@ span.email-result{
   color: #fff;
 }
 
+.submit {
+    border-radius: 0;
+    font-family: Raleway,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+
+.submit a{
+  color: #fff;
+}
+
+.btn-default {
+    border: 1px solid #FFAAAA;
+    color: #FFAAAA;
+    background-color: transparent;
+}
+
 .btn-default {
     border: 1px solid #FFAAAA;
     color: #FFAAAA;
@@ -551,6 +571,20 @@ span.email-result{
 
 .btn-default:hover,
 .btn-default:focus {
+    outline: 0;
+    color: #fff;
+    background-color: #FF4141;
+    border: 1px solid #FF4141;
+}
+
+.submit-default {
+    border: 1px solid #FF4141;
+    color: #FF4141;
+    background-color: transparent;
+}
+
+.submit-default:hover,
+.submit-default:focus {
     outline: 0;
     color: #fff;
     background-color: #FF4141;
