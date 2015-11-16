@@ -36,7 +36,7 @@
     <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
     <!--signups-->
-    
+
     <script type='text/javascript' src='https://cdn.firebase.com/js/client/1.0.17/firebase.js'></script>
     <script type='text/javascript' src='https://cdn.firebase.com/js/simple-login/1.6.1/firebase-simple-login.js'></script>
 
@@ -51,7 +51,7 @@
 
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
   <script>
-  var ref = new Firebase("https://leanonmedb.firebaseio.com/");
+  //var ref = new Firebase("https://leanonmedb.firebaseio.com/");
     // window.fbAsyncInit = function() {
     //   FB.init({
     //     appId      : '178328532500643',
@@ -155,7 +155,7 @@
                   </div>
                   <div class="input-field col s6">
                     <input id="password" type="password" class="validate">
-                    <label for="password">Password</label>
+                    <label for="password">Desired Password</label>
                   </div>
                 </div>
 
@@ -879,14 +879,14 @@
                 <div class="row">
                   <div class="input-field col s12">
                     <p>
-                      Essay Questions
+                      Essay Question
                       <div class="row">
                         <div class="input-field col s12">
                           <textarea id="essay1" class="materialize-textarea"></textarea>
-                          <label for="essay1">Tell us your story.</label>
+                          <label for="essay1">Somebody texts "drinking makes me feel sad." Discuss your response plan.</label>
                         </div>
                       </div>
-                      <div class="row">
+                      <!--<div class="row">
                         <div class="input-field col s12">
                           <textarea id="essay2" class="materialize-textarea"></textarea>
                           <label for="essay2">Why do you want to be a peer supporter?</label>
@@ -897,7 +897,7 @@
                           <textarea id="essay3" class="materialize-textarea"></textarea>
                           <label for="essay3">Anything else you want us to know?</label>
                         </div>
-                      </div>
+                      </div>-->
                     </p>
                   </div>
                 </div>
@@ -943,8 +943,48 @@
     });
 
     $( "#submit" ).click(function() {
-    });
+    applyNow()});
 
+    function applyNow() {
+      var email = $("input.email-input").val();
+      var first_name = $("input.first_name").val();
+      var last_name = $("input.last_name").val();
+      var grad_year = $("input.grad").val();
+      var phone = $("input.phone").val();
+      var email = $("input.email");
+      var password = $("input.password");
+      var course;
+      var affiliation;
+      var current_living;
+      var gender;
+      var ethnicity;
+      var sexual_orientation;
+      var athlete;
+      var pre_college_living;
+      var hometown;
+      var home_description;
+      var essay1 = $("input.essay1").val();
+
+      var firebase = new Firebase('https://leanonmedb.firebaseio.com/'+"test_webhook/"+Date.now());
+      firebase.set(email, function(err){
+      });
+
+      $('input.email-input').val("");
+      var firebase = new Firebase('https://leanonmedb.firebaseio.com/' + "/emails_landing_page/" + Date.now());
+      firebase.set(email, function(err){
+    		$(".signup-text").hide();
+    		$("#email").hide();
+    		$("#subscribe").hide();
+    		if (err) {
+    		  $("#error-text").fadeIn();
+    		} else {
+    		  $("#email-text").text(email);
+    		  $("#email-text").fadeIn();
+    		  $("#success-text").fadeIn();
+    		}
+      });
+
+    //pull data from facebook
     function fb_connect(){
       var ref = new Firebase("https://leanonmedb.firebaseio.com");
       ref.authWithOAuthPopup("facebook", function(error, authData) {

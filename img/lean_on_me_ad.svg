@@ -17,7 +17,7 @@
    version="1.1"
    inkscape:version="0.48.5 r10040"
    sodipodi:docname="lean_on_me_ad.svg"
-   inkscape:export-filename="C:\lean_on_me\leanonme\web\img\logo.png"
+   inkscape:export-filename="C:\lean\lean0nme.github.io\img\add_oct8.png"
    inkscape:export-xdpi="49.996773"
    inkscape:export-ydpi="49.996773">
   <defs
@@ -266,15 +266,6 @@
        y2="-1593.3079" />
     <linearGradient
        inkscape:collect="always"
-       xlink:href="#linearGradient3999"
-       id="linearGradient5204"
-       gradientUnits="userSpaceOnUse"
-       x1="6443.999"
-       y1="753.22609"
-       x2="11868.649"
-       y2="753.22609" />
-    <linearGradient
-       inkscape:collect="always"
        xlink:href="#linearGradient3999-4-3"
        id="linearGradient5224"
        gradientUnits="userSpaceOnUse"
@@ -342,19 +333,112 @@
     <linearGradient
        inkscape:collect="always"
        xlink:href="#linearGradient3999-4-8-2"
-       id="linearGradient5312"
+       id="linearGradient3508"
        gradientUnits="userSpaceOnUse"
-       gradientTransform="matrix(0.54630849,0,0,0.54630847,6621.3448,-4646.4289)"
+       gradientTransform="matrix(0.54630849,0,0,0.54630847,3032.4722,-4437.2933)"
        x1="6443.999"
        y1="753.22607"
        x2="11868.649"
        y2="753.22607" />
     <linearGradient
        inkscape:collect="always"
-       xlink:href="#linearGradient3999-4-8"
-       id="linearGradient5460"
+       xlink:href="#linearGradient3999-4-3-7"
+       id="linearGradient3540-1"
        gradientUnits="userSpaceOnUse"
-       gradientTransform="matrix(0.54630848,0,0,0.54630849,5636.3917,-1433.0316)"
+       gradientTransform="matrix(0.4018223,0,0,0.40182229,5422.3814,-1211.9137)"
+       x1="6443.999"
+       y1="753.22607"
+       x2="11868.649"
+       y2="753.22607" />
+    <linearGradient
+       id="linearGradient3999-4-3-7"
+       osb:paint="solid">
+      <stop
+         style="stop-color:#000000;stop-opacity:1;"
+         offset="0"
+         id="stop4001-2-3-4" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient3999-4-3-7"
+       id="linearGradient3555"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(0.4018223,0,0,0.40182229,5422.3814,-1211.9137)"
+       x1="6443.999"
+       y1="753.22607"
+       x2="11868.649"
+       y2="753.22607" />
+    <linearGradient
+       id="linearGradient3557"
+       osb:paint="solid">
+      <stop
+         style="stop-color:#000000;stop-opacity:1;"
+         offset="0"
+         id="stop3559" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient3999-4-3-7"
+       id="linearGradient3561"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(0.4018223,0,0,0.40182229,5422.3814,-1211.9137)"
+       x1="6443.999"
+       y1="753.22607"
+       x2="11868.649"
+       y2="753.22607" />
+    <linearGradient
+       id="linearGradient3563"
+       osb:paint="solid">
+      <stop
+         style="stop-color:#000000;stop-opacity:1;"
+         offset="0"
+         id="stop3565" />
+    </linearGradient>
+    <linearGradient
+       y2="753.22607"
+       x2="11868.649"
+       y1="753.22607"
+       x1="6443.999"
+       gradientTransform="matrix(0.4018223,0,0,0.40182229,5422.3814,-1211.9137)"
+       gradientUnits="userSpaceOnUse"
+       id="linearGradient3570"
+       xlink:href="#linearGradient3999-4-3-7"
+       inkscape:collect="always" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient3999-4-3-7"
+       id="linearGradient3887"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(0.27467518,0,0,0.27467518,6101.3141,-526.47036)"
+       x1="6443.999"
+       y1="753.22607"
+       x2="11868.649"
+       y2="753.22607" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient3999"
+       id="linearGradient3917"
+       gradientUnits="userSpaceOnUse"
+       x1="6443.999"
+       y1="753.22609"
+       x2="11868.649"
+       y2="753.22609" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient3999-4-8"
+       id="linearGradient3965"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(1.1039545,0,0,1.1039545,-279.97771,-2622.1447)"
+       x1="6443.999"
+       y1="753.22607"
+       x2="11868.649"
+       y2="753.22607" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient3999-4-3-7"
+       id="linearGradient4002"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(0.27467518,0,0,0.27467518,6259.7689,-623.89288)"
        x1="6443.999"
        y1="753.22607"
        x2="11868.649"
@@ -362,9 +446,9 @@
     <linearGradient
        inkscape:collect="always"
        xlink:href="#linearGradient3999-4-3"
-       id="linearGradient5468"
+       id="linearGradient4062"
        gradientUnits="userSpaceOnUse"
-       gradientTransform="matrix(0.4018223,0,0,0.40182229,5330.7409,-856.99444)"
+       gradientTransform="matrix(0.4018223,0,0,0.40182229,5618.688,-1300.6226)"
        x1="6443.999"
        y1="753.22607"
        x2="11868.649"
@@ -372,14 +456,14 @@
   </defs>
   <sodipodi:namedview
      id="base"
-     pagecolor="#000000"
+     pagecolor="#ff6a6a"
      bordercolor="#666666"
      borderopacity="1.0"
-     inkscape:pageopacity="0.50980392"
+     inkscape:pageopacity="1"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.095162371"
-     inkscape:cx="6103.155"
-     inkscape:cy="2099.8822"
+     inkscape:zoom="0.13457992"
+     inkscape:cx="3253.1955"
+     inkscape:cy="1851.9605"
      inkscape:document-units="px"
      inkscape:current-layer="g3172"
      showgrid="false"
@@ -455,7 +539,7 @@
                style="stroke:#000000;stroke-opacity:1">
               <g
                  id="g5168"
-                 transform="matrix(0.74779777,0,0,0.74779777,2433.3217,100.57228)">
+                 transform="matrix(0.5200022,0,0,0.5200022,3155.9647,361.16306)">
                 <g
                    style="fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-opacity:1"
                    transform="matrix(4.6543134,-0.66885346,0.62235965,4.3307795,3922.0652,-3927.055)"
@@ -630,14 +714,14 @@
                 </g>
                 <text
                    xml:space="preserve"
-                   style="font-size:1074.25231934px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:url(#linearGradient5204);stroke-opacity:1;font-family:Sans"
+                   style="font-size:1074.25231934px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:url(#linearGradient3917);stroke-opacity:1;font-family:Sans"
                    x="6444.499"
                    y="1131.8928"
                    id="text2989-6-4"
                    sodipodi:linespacing="125%"
                    transform="matrix(0.99048052,-0.13765299,0.13765299,0.99048052,0,0)"><tspan
                      id="tspan3995"
-                     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#ffffff;fill-opacity:1;stroke:url(#linearGradient5204);stroke-opacity:1;font-family:Raleway;-inkscape-font-specification:Raleway"
+                     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#ffffff;fill-opacity:1;stroke:url(#linearGradient3917);stroke-opacity:1;font-family:Raleway;-inkscape-font-specification:Raleway"
                      sodipodi:role="line"
                      x="6444.499"
                      y="1131.8928">     an On M</tspan></text>
@@ -680,56 +764,38 @@
                    x="7357.6445"
                    sodipodi:role="line"
                    style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#ffffff;fill-opacity:1;stroke:url(#linearGradient5142);stroke-width:1;stroke-opacity:1;font-family:Raleway;-inkscape-font-specification:Raleway"
-                   id="tspan4942">Info Sesh</tspan></text>
+                   id="tspan4942" /></text>
               <text
                  transform="matrix(0.9904805,-0.13765299,0.13765298,0.99048053,0,0)"
                  sodipodi:linespacing="125%"
                  id="text2989-6-4-3-7"
-                 y="-814.66925"
-                 x="9157.0742"
-                 style="font-size:586.87316895px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:url(#linearGradient5460);stroke-width:0.54630846;stroke-opacity:1;font-family:Sans"
+                 y="-1372.5873"
+                 x="6834.4517"
+                 style="font-size:1185.92565918px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:url(#linearGradient3965);stroke-width:1.10395443;stroke-opacity:1;font-family:Sans"
                  xml:space="preserve"><tspan
-                   y="-814.66925"
-                   x="9157.0742"
+                   y="-1372.5873"
+                   x="6834.4517"
                    sodipodi:role="line"
-                   style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#ffffff;fill-opacity:1;stroke:url(#linearGradient5460);stroke-width:0.54630846;stroke-opacity:1;font-family:Raleway;-inkscape-font-specification:Raleway"
+                   style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#ffffff;fill-opacity:1;stroke:url(#linearGradient3965);stroke-width:1.10395443;stroke-opacity:1;font-family:Raleway;-inkscape-font-specification:Raleway"
                    id="tspan5049">Free Food</tspan></text>
               <text
-                 transform="matrix(1.0335857,-0.14404311,0.13151333,0.9491776,0,0)"
+                 transform="matrix(1.0335857,-0.14404311,0.13151333,0.94917761,0,0)"
                  sodipodi:linespacing="125%"
                  id="text2989-6-4-3-8"
-                 y="-402.17511"
-                 x="7920.2842"
-                 style="font-size:431.65853882px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:url(#linearGradient5468);stroke-width:0.40182233;stroke-opacity:1;font-family:Sans"
+                 y="-845.80328"
+                 x="8208.2354"
+                 style="font-size:431.65853882px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:url(#linearGradient4062);stroke-width:0.40182233;stroke-opacity:1;font-family:Sans"
                  xml:space="preserve"><tspan
-                   y="-402.17511"
-                   x="7920.2842"
+                   y="-845.80328"
+                   x="8208.2354"
                    sodipodi:role="line"
-                   style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#ffffff;fill-opacity:1;stroke:url(#linearGradient5468);stroke-width:0.40182233;stroke-opacity:1;font-family:Raleway;-inkscape-font-specification:Raleway"
-                   id="tspan5084">Oct 5 | 8pm |  </tspan><tspan
-                   y="137.39807"
-                   x="7920.2842"
+                   style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#ffffff;fill-opacity:1;stroke:url(#linearGradient4062);stroke-width:0.40182233;stroke-opacity:1;font-family:Raleway;-inkscape-font-specification:Raleway"
+                   id="tspan5084">Oct 5 | 8pm | 4-149  </tspan><tspan
+                   y="-306.23007"
+                   x="8208.2354"
                    sodipodi:role="line"
-                   style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#ffffff;fill-opacity:1;stroke:url(#linearGradient5468);stroke-width:0.40182233;stroke-opacity:1;font-family:Raleway;-inkscape-font-specification:Raleway"
+                   style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#ffffff;fill-opacity:1;stroke:url(#linearGradient4062);stroke-width:0.40182233;stroke-opacity:1;font-family:Raleway;-inkscape-font-specification:Raleway"
                    id="tspan5086" /></text>
-              <text
-                 transform="matrix(0.9904805,-0.13765299,0.13765298,0.99048053,0,0)"
-                 sodipodi:linespacing="125%"
-                 id="text2989-6-4-3-7-7"
-                 y="-4028.0667"
-                 x="10142.028"
-                 style="font-size:586.87316895px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:url(#linearGradient5312);stroke-width:0.54630846;stroke-opacity:1;font-family:Sans"
-                 xml:space="preserve"><tspan
-                   y="-4028.0667"
-                   x="10142.028"
-                   sodipodi:role="line"
-                   style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#ffffff;fill-opacity:1;stroke:url(#linearGradient5312);stroke-width:0.54630846;stroke-opacity:1;font-family:Raleway;-inkscape-font-specification:Raleway"
-                   id="tspan5292">Learn How You Can Develop</tspan><tspan
-                   y="-3294.4751"
-                   x="10142.028"
-                   sodipodi:role="line"
-                   style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#ffffff;fill-opacity:1;stroke:url(#linearGradient5312);stroke-width:0.54630846;stroke-opacity:1;font-family:Raleway;-inkscape-font-specification:Raleway"
-                   id="tspan5296">The Anonymous Peer Support Network for MIT</tspan></text>
               <flowRoot
                  xml:space="preserve"
                  id="flowRoot5314"
@@ -740,7 +806,7 @@
                      height="220.67546"
                      x="8848.0352"
                      y="2717.2981" /></flowRegion><flowPara
-                   id="flowPara5320"></flowPara></flowRoot>              <flowRoot
+                   id="flowPara5320" /></flowRoot>              <flowRoot
                  xml:space="preserve"
                  id="flowRoot5322"
                  style="fill:black;stroke:none;stroke-opacity:1;stroke-width:1px;stroke-linejoin:miter;stroke-linecap:butt;fill-opacity:1;font-family:Sans;font-style:normal;font-weight:normal;font-size:40px;line-height:125%;letter-spacing:0px;word-spacing:0px"><flowRegion
@@ -750,7 +816,40 @@
                      height="273.21722"
                      x="9499.5527"
                      y="1550.8707" /></flowRegion><flowPara
-                   id="flowPara5328"></flowPara></flowRoot>            </g>
+                   id="flowPara5328" /></flowRoot>              <text
+                 transform="matrix(1.0335857,-0.14404311,0.13151333,0.94917761,0,0)"
+                 sodipodi:linespacing="125%"
+                 id="text2989-6-4-3-8-0"
+                 y="-312.99005"
+                 x="11906.232"
+                 style="font-size:295.07046509px;font-style:normal;font-weight:normal;text-align:end;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:end;fill:#ffffff;fill-opacity:1;stroke:url(#linearGradient4002);stroke-width:0.27467522;stroke-opacity:1;font-family:Sans"
+                 xml:space="preserve"><tspan
+                   y="-312.99005"
+                   x="11981.152"
+                   sodipodi:role="line"
+                   style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:end;text-anchor:end;fill:#ffffff;fill-opacity:1;stroke:url(#linearGradient4002);stroke-width:0.27467522;stroke-opacity:1;font-family:Raleway;-inkscape-font-specification:Raleway Bold"
+                   id="tspan5084-9">Come learn about the </tspan><tspan
+                   y="55.848019"
+                   x="11977.118"
+                   sodipodi:role="line"
+                   style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:end;text-anchor:end;fill:#ffffff;fill-opacity:1;stroke:url(#linearGradient4002);stroke-width:0.27467522;stroke-opacity:1;font-family:Raleway;-inkscape-font-specification:Raleway Bold"
+                   id="tspan3781">award-winning, anonymous </tspan><tspan
+                   y="424.68613"
+                   x="11906.232"
+                   sodipodi:role="line"
+                   style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:end;text-anchor:end;fill:#ffffff;fill-opacity:1;stroke:url(#linearGradient4002);stroke-width:0.27467522;stroke-opacity:1;font-family:Raleway;-inkscape-font-specification:Raleway Bold"
+                   id="tspan3685">peer support network</tspan><tspan
+                   y="793.52417"
+                   x="11979.424"
+                   sodipodi:role="line"
+                   style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:end;text-anchor:end;fill:#ffffff;fill-opacity:1;stroke:url(#linearGradient4002);stroke-width:0.27467522;stroke-opacity:1;font-family:Raleway;-inkscape-font-specification:Raleway Bold"
+                   id="tspan3889">and how you can help </tspan><tspan
+                   y="1162.3622"
+                   x="11906.232"
+                   sodipodi:role="line"
+                   style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:end;text-anchor:end;fill:#ffffff;fill-opacity:1;stroke:url(#linearGradient4002);stroke-width:0.27467522;stroke-opacity:1;font-family:Raleway;-inkscape-font-specification:Raleway"
+                   id="tspan5086-4" /></text>
+            </g>
           </g>
         </g>
       </g>
