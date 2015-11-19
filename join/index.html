@@ -1218,29 +1218,34 @@
 
         essay_response = document.getElementById('essay1').value;
 
-
         file_to_write='https://leanonmedb.firebaseio.com/' + "/applicants/";
         var ref = new Firebase(file_to_write);
-        ref.child(phone).set({
-          email: email,
-          first_name: first_name,
-          last_name: last_name,
-          date_added: date_added,
-          graduation_year: graduation_year,
-          phone: phone,
-          password: password,
-          course: course,
-          affiliation: affiliation,
-          living: living,
-          gender: gender,
-          ethnicity: ethnicity,
-          sexual_orientation: sexual,
-          athlete: athlete,
-          hometown: hometown,
-          hometown_type: hometown_type,
-          essay: essay_response
-        });
-        alert('Thanks for your submission '+ first_name+', we will be in touch shortly.');
+        ref.once('value', function(snapshot){
+          if (snapshot.child(phone).exists()) {
+            alert('Please input a different phone number. We already have an applicant with the phone number listed. If you made an error, please submit using a unique number and clarify the situation in the essay box.')
+          } else {
+            ref.child(phone).set({
+              email: email,
+              first_name: first_name,
+              last_name: last_name,
+              date_added: date_added,
+              graduation_year: graduation_year,
+              phone: phone,
+              password: password,
+              course: course,
+              affiliation: affiliation,
+              living: living,
+              gender: gender,
+              ethnicity: ethnicity,
+              sexual_orientation: sexual,
+              athlete: athlete,
+              hometown: hometown,
+              hometown_type: hometown_type,
+              essay: essay_response
+            });
+            alert('Thanks for your submission '+ first_name+', we will be in touch shortly.');
+          }
+        })
       }
     </script>
     <script type="text/javascript">
