@@ -40,6 +40,29 @@ $("input").keypress(function(event) {
 	}
 });
 
+//form submission to firebase
+$("#subscribe").click(function() {
+	signupEmail()
+});
+
+function signupEmail() {
+  var email = $("input.email-input").val();
+  $('input.email-input').val("");
+  var firebase = new Firebase('https://leanonmedb.firebaseio.com/' + "/emails_landing_page/" + Date.now());
+  firebase.set(email, function(err){
+		$(".signup-text").hide();
+		$("#email").hide();
+		$("#subscribe").hide();
+		if (err) {
+		  $("#error-text").fadeIn();
+		} else {
+		  $("#email-text").text(email);
+		  $("#email-text").fadeIn();
+		  $("#success-text").fadeIn();
+		}
+  });
+
+//email signup to Firebase
 $("#subscribe").click(function() {
 	signupEmail()
 });
