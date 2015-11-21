@@ -45,6 +45,7 @@
   function show_applicant_info(){
     var ref = new Firebase("https://leanonmedb.firebaseio.com/applicants/");
     var txt = '';
+    counter = 0
     ref.on('value', function(snapshot){
       snapshot.forEach(function(childsnapshot){
         var applicant = childsnapshot.val();
@@ -53,9 +54,11 @@
         phone = applicant.phone;
         email = applicant.email;
         txt = txt + last + ', '+ first + ', '+email+', '+ phone +'\n';
+        counter+=1;
       });
     });
     document.getElementById("txtbx").value = txt;
+    document.getElementById("status_bx").value = 'We have: '+counter+' applicants.'
   };
 
   function show_applicant_emails(){
@@ -158,7 +161,13 @@
   };
 
   function archive_applicant(){
-    alert('not finished')
+    counter = 0;
+    ref.on('value', function(snapshot){
+      snapshot.forEach(function(childsnapshot){
+        counter+=1;
+      });
+    });
+    document.getElementById("status_bx").value = 'applicant archived, current applicant count: ' + counter;
   };
   function show_training(){
     function show_applicant_info(){

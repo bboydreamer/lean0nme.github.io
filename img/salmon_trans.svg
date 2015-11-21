@@ -14,7 +14,7 @@
    id="svg4832"
    version="1.1"
    inkscape:version="0.48.5 r10040"
-   sodipodi:docname="option1.svg"
+   sodipodi:docname="lean_logo.svg"
    inkscape:export-filename="C:\lean\lean0nme.github.io\img\option1.png"
    inkscape:export-xdpi="49.996773"
    inkscape:export-ydpi="49.996773">
@@ -22,10 +22,10 @@
      id="defs4834" />
   <sodipodi:namedview
      id="base"
-     pagecolor="#ff6a6a"
+     pagecolor="#d66a6a"
      bordercolor="#666666"
      borderopacity="1.0"
-     inkscape:pageopacity="1"
+     inkscape:pageopacity="0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.24748737"
      inkscape:cx="1376.0914"
@@ -50,7 +50,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
