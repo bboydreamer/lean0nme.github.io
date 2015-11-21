@@ -61,6 +61,7 @@ function signupEmail() {
 		  $("#success-text").fadeIn();
 		}
   });
+}
 
 //email signup to Firebase
 $("#subscribe").click(function() {
