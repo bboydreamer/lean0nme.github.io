@@ -493,13 +493,20 @@
                 <div class="row">
                   <div class="col s6">
                     <p>
-                      <input name="gender" type="radio" id="male"/>
+                      <input name="gender" type="checkbox" id="male"/>
                       <label for="male">Male</label>
                     </p>
                   </div>
                   <div class="col s6">
                     <p>
-                      <input name="gender" type="radio" id="neither_gender"/>
+                      <input name="gender" type="checkbox" id="cisgender"/>
+                      <label for="transgender">Cisgender</label>
+                    </p>
+                  </div>
+                </div>
+                  <div class="col s6">
+                    <p>
+                      <input name="gender" type="checkbox" id="neither_gender"/>
                       <label for="neither_gender">I don't identify with either</label>
                     </p>
                   </div>
@@ -508,13 +515,22 @@
                 <div class="row">
                   <div class="col s6">
                     <p>
-                      <input name="gender" type="radio" id="female"/>
+                      <input name="gender" type="checkbox" id="female"/>
                       <label for="female">Female</label>
                     </p>
                   </div>
+
                   <div class="col s6">
                     <p>
-                      <input name="gender" type="radio" id="null_gender"/>
+                      <input name="gender" type="checkbox" id="transgender"/>
+                      <label for="transgender">Transgender</label>
+                    </p>
+                  </div>
+                </div>
+
+                  <div class="col s6">
+                    <p>
+                      <input name="gender" type="checkbox" id="null_gender"/>
                       <label for="null_gender">Prefer not to disclose</label>
                     </p>
                   </div>
@@ -614,28 +630,21 @@
                 <div class="row">
                   <div class="col s6">
                     <p>
-                      <input name="orientation" type="radio" id="straight"/>
+                      <input name="orientation" type="checkbox" id="straight"/>
                       <label for="straight">Straight</label>
                     </p>
                   </div>
-                  <div class="col s6">
-                    <p>
-                      <input name="orientation" type="radio" id="transgender"/>
-                      <label for="transgender">Transgender</label>
-                    </p>
-                  </div>
-                </div>
 
                 <div class="row">
                   <div class="col s6">
                     <p>
-                      <input name="orientation" type="radio" id="gay"/>
+                      <input name="orientation" type="checkbox" id="gay"/>
                       <label for="gay">Gay</label>
                     </p>
                   </div>
                   <div class="col s6">
                     <p>
-                      <input name="orientation" type="radio" id="queer"/>
+                      <input name="orientation" type="checkbox" id="queer"/>
                       <label for="queer">Queer</label>
                     </p>
                   </div>
@@ -644,13 +653,13 @@
                 <div class="row">
                   <div class="col s6">
                     <p>
-                      <input name="orientation" type="radio" id="lesbian"/>
+                      <input name="orientation" type="checkbox" id="lesbian"/>
                       <label for="lesbian">Lesbian</label>
                     </p>
                   </div>
                   <div class="col s6">
                     <p>
-                      <input name="orientation" type="radio" id="asexual"/>
+                      <input name="orientation" type="checkbox" id="asexual"/>
                       <label for="asexual">Asexual</label>
                     </p>
                   </div>
@@ -659,13 +668,13 @@
                 <div class="row">
                   <div class="col s6">
                     <p>
-                      <input name="orientation" type="radio" id="bisexual"/>
+                      <input name="orientation" type="checkbox" id="bisexual"/>
                       <label for="bisexual">Bisexual</label>
                     </p>
                   </div>
                   <div class="col s6">
                     <p>
-                      <input name="orientation" type="radio" id="null_orientation"/>
+                      <input name="orientation" type="checkbox" id="null_orientation"/>
                       <label for="null_orientation">Prefer not to disclose</label>
                     </p>
                   </div>
@@ -1071,16 +1080,22 @@
 
         gender = ''
         if (document.getElementById('male').checked) {
-          gender = 'male' ;
+          gender = gender + 'male;' ;
         }
         if (document.getElementById('neither_gender').checked) {
-          gender = 'other' ;
+          gender = gender+ 'other;' ;
         }
         if (document.getElementById('female').checked) {
-          gender = 'female' ;
+          gender = gender + 'female;' ;
         }
         if (document.getElementById('null_gender').checked) {
-          gender = 'undisclosed' ;
+          gender = gender + 'undisclosed;' ;
+        }
+        if (document.getElementById('cisgender').checked) {
+          gender = gender + 'cisgender;' ;
+        }
+        if (document.getElementById('transgender').checked){
+          gender = gender + 'transgender;' ;
         }
 
         ethnicity = ''
@@ -1117,25 +1132,22 @@
 
         sexual = ''
         if (document.getElementById('straight').checked) {
-          sexual = 'straight' ;
-        }
-        if (document.getElementById('transgender').checked) {
-          sexual = 'transgender' ;
+          sexual = sexual + 'straight;' ;
         }
         if (document.getElementById('gay').checked) {
-          sexual = 'gay' ;
+          sexual = sexual + 'gay;' ;
         }
         if (document.getElementById('queer').checked) {
-          sexual = 'queer' ;
+          sexual = sexual + 'queer;' ;
         }
         if (document.getElementById('lesbian').checked) {
-          sexual = 'lesbian' ;
+          sexual = sexual + 'lesbian;' ;
         }
         if (document.getElementById('bisexual').checked) {
-          sexual = 'bisexual' ;
+          sexual = sexual + 'bisexual;' ;
         }
         if (document.getElementById('null_orientation').checked) {
-          sexual = 'undisclosed' ;
+          sexual = sexual + 'undisclosed;' ;
         }
 
         athlete = ''
