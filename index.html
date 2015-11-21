@@ -392,10 +392,9 @@
       var firebase = new Firebase('https://leanonmedb.firebaseio.com/' + "/emails_landing_page/" + Date.now());
       firebase.set(email, function(err){
         alert('Oops, something went wrong! Please try again.')
-    		}
-      });
+    		});
       alert(email + ' has been subscribed! Thanks for signing up!')
-    }
+    };
     </script>
 
 </body>
