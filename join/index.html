@@ -116,7 +116,7 @@
     <!-- Intro Header -->
     <div class="materialize-fit">
     <header class="team">
-      <div class="signup-body">
+      <div class="signup-body" id='signup-form'>
           <div class="container">
             <div class="row">
               <form class="col s12">
@@ -1270,7 +1270,8 @@
           		  $("#email-text").text(email);
           		  $("#email-text").fadeIn();
           		  $("#success-text").fadeIn();
-                document.getElementById('signup-body').reset();
+                document.getElementById('signup-form').reset();
+              }}
             });
             //alert('Thanks for your submission '+ first_name+', we will be in touch shortly.');
           }
