@@ -1270,7 +1270,16 @@
           		  $("#email-text").text(email);
           		  $("#email-text").fadeIn();
           		  $("#success-text").fadeIn();
-                document.getElementById('signup-form').reset();
+                var elements = document.getElementsByTagName("input");
+                for (var ii=0; ii < elements.length; ii++) {
+                  if (elements[ii].type == "text") {
+                    elements[ii].value = "";
+                  };
+                  if (elements[ii].type == "checkbox" or elements[ii].type == "radio"){
+                    elements[ii].checked = (1==0);
+                  }
+                }
+
               }
             }
           )}});
