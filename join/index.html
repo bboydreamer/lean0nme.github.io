@@ -912,8 +912,7 @@
                 </div>
 
                 <div class="submit submit-default" id="submit" role="button" onclick="send_app()">Submit Application</div>
-                <span id="email-text" class "email-result"></span>
-                <span id="success-text" class="email-result"><b> thanks for your submission! We will be in touch soon.</b></span>
+                <span id="success-text" class="email-result"><b> Thanks for your submission! We will be in touch soon.</b></span>
                 <span id="error-text" class="email-result">Application failed, possibly non-unique phone number. Try again later or send us an email!</span>
                 </br>
                 </br>
@@ -1263,18 +1262,14 @@
               essay: essay_response
             }, function(err){
               $("#submit").hide();
-          		$("#email").hide();
-          		$("#subscribe").hide();
           		if (err) {
           		  $("#error-text").fadeIn();
           		} else {
-          		  $("#email-text").text(first_name);
-          		  $("#email-text").fadeIn();
           		  $("#success-text").fadeIn();
                 var elements = document.getElementsByTagName("input");
                 for (var ii=0; ii < elements.length; ii++) {
                   if (elements[ii].type == "text") {
-                    elements[ii].value = "";
+                    elements[ii].value = " ";
                   };
                   if (elements[ii].type == "checkbox" || elements[ii].type == "radio"){
                     elements[ii].checked = false;
