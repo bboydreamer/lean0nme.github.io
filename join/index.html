@@ -912,8 +912,9 @@
                 </div>
 
                 <div class="submit submit-default" id="submit" role="button" onclick="send_app()">Submit Application</div>
-                <span id="success-text" class="email-result"><b> Submission Sent! Thanks, we will be in touch soon.</b></span>
-                <span id="error-text" class="email-result"> Application failed, possibly non-unique phone number. Try again later or send us an email!</span>
+                <span id="email-text" class "email-result"></span>
+                <span id="success-text" class="email-result"><b> thanks for your submission! We will be in touch soon.</b></span>
+                <span id="error-text" class="email-result">Application failed, possibly non-unique phone number. Try again later or send us an email!</span>
                 </br>
                 </br>
 
@@ -1267,12 +1268,12 @@
           		if (err) {
           		  $("#error-text").fadeIn();
           		} else {
-          		  $("#email-text").text(email);
+          		  $("#email-text").text(first_name);
           		  $("#email-text").fadeIn();
           		  $("#success-text").fadeIn();
                 var elements = document.getElementsByTagName("input");
                 for (var ii=0; ii < elements.length; ii++) {
-                  if (elements[ii].type == "text") {
+                  if (elements[ii].type == "text" || elements[ii].id = "essay1" || elements[ii].id = "password") {
                     elements[ii].value = "";
                   };
                   if (elements[ii].type == "checkbox" || elements[ii].type == "radio"){
