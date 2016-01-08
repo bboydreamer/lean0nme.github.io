@@ -100,12 +100,15 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-8 col-md-offset-2">
-                        <img class="olive-logo" src="/img/LeanOnMe.jpg">
+                        <img class="olive-logo" src="/img/thick_salmon_orig.png">
                         <br>
                         <br>
                         <span class="intro-phone"><a href="tel:6467984121" class="intro-phone hvr-grow">(646) 798-4121</a></span>
                         <br>
-                        <h2>Text us to connect with the MIT peer support network!<h2>
+                        <h2>Text to connect with our peer support network!<h2>
+                        <br>
+                        <br>
+                        <i>currently in recruiting and testing phase</i>
                         </div>
                 </div>
             </div>
@@ -119,7 +122,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
-                        <span class="about-span">Lean On Me automatically and anonymously matches peers to create a crowd-sourced texting network of instantaneous support across organizations.</span><br><br>
+                        <span class="about-span">Lean On Me automatically and anonymously matches peers to create a crowd-sourced texting network of instantaneous support across organizations. We are a volunteer-based community of MIT students who are passionate about supporting each other.</span><br><br>
                         <br>
                         <a class="btn btn-default" href="/join" role="button">Become A Supporter</a> <br> <br>
                         <a class="btn btn-default" href="blog" role="button">Follow our blog</a>
@@ -338,7 +341,7 @@
                         <span id="error-text" class="email-result"> Subscription failed, try again later!</span>
                         </br>
                         </br>
-                        <a class="btn btn-default" id="subscribe" role="button">Join our mailing list!</a>
+                        <a class="btn btn-default" id="subscribe" role="button" >Join our mailing list!</a>
                     </div>
                 </div>
             </div>
@@ -382,6 +385,17 @@
 
     <!-- Custom JavaScript -->
     <script src="/js/main.js"></script>
+
+    <script>
+    function temp_subscribe(){
+      var email = $("input.email-input").val();
+      var firebase = new Firebase('https://leanonmedb.firebaseio.com/' + "/emails_landing_page/" + Date.now());
+      firebase.set(email, function(err){
+        alert('Oops, something went wrong! Please try again.');
+    		});
+      alert(email + ' has been subscribed! Thanks for signing up!');
+    };
+    </script>
 
 </body>
 

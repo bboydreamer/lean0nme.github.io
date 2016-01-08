@@ -1,0 +1,191 @@
+<html>
+  <head>
+    <script src="https://cdn.firebase.com/js/client/2.3.1/firebase.js";></script>
+  </head>
+  <body>
+    <textarea id = "status_bx" rows="3" cols="50">
+      STATUS BOX
+    </textarea>
+    <br><br>
+
+    <button onclick="clearText()">Clear</button> |
+    <button onclick="show_applicant_info()">Applicant Info</button> |
+    <button onclick="show_applicant_emails()">Applicant Emails</button> |
+    <button onclick="send_bcc_gmail()">Send Gmail</button> |
+    <button onclick="query_field()">Query Field</button> |
+    <button onclick="convert_applicant()">Convert To Training</button> |
+    <button onclick="archive_applicant()">Archive Applicant</button> |
+    <button onclick="show_training()">Display Training</button>
+    <br><br>
+
+    <textarea id = "txtbx" rows="30" cols="100">
+      TEXTBOX: initial text upon loading page
+    </textarea>
+    <br>
+    Instructions: <br>
+    <li> Clear: clears textbox
+    <li> Applicant Info: makes CSV format in textbox.
+    <li> Applicant Emails: places emails in textbox.
+    <li> Send Gmail: takes emails in textbox and opens (via BCC) a gmail message to be sent
+    <li> Query Field: takes status box field (email, essay, graduation_year, affiliation, gender, ethnicity, hometown, etc.) and returns applicant info
+    <li> Convert to Training: searches for phone in status box and moves database entry to counselors_in_training indexed by phone and data to label
+    <li> Archive Applicant: searches for phone in status box and stores applicant data, removes from active lists
+    <li> Display Training: info of counselors_in_training
+  </body>
+
+<script> function clearText() {
+      var txt=document.getElementById("txtbx").value;
+      txt='cleared';
+      document.getElementById("txtbx").value=txt;
+      document.getElementById('status_bx').value = 'CLEARED TEXTBOX';
+    };
+</script>
+
+<script language="javascript" type="text/javascript">
+  function show_applicant_info(){
+    var ref = new Firebase("https://leanonmedb.firebaseio.com/applicants/");
+    var txt = '';
+    counter = 0
+    ref.on('value', function(snapshot){
+      snapshot.forEach(function(childsnapshot){
+        var applicant = childsnapshot.val();
+        last = applicant.last_name
+        first = applicant.first_name;
+        phone = applicant.phone;
+        email = applicant.email;
+        txt = txt + last + ', '+ first + ', '+email+', '+ phone +'\n';
+        counter+=1;
+      });
+    });
+    document.getElementById("txtbx").value = txt;
+    document.getElementById("status_bx").value = 'We have: '+counter+' applicants.'
+  };
+
+  function show_applicant_emails(){
+    var ref = new Firebase("https://leanonmedb.firebaseio.com/applicants/");
+    var txt = '';
+    ref.on('value', function(snapshot){
+      snapshot.forEach(function(childsnapshot){
+        var applicant = childsnapshot.val();
+        email = applicant.email;
+        txt = txt + email+ '; ';
+      });
+    });
+    document.getElementById("txtbx").value = txt;
+  };
+
+  function send_bcc_gmail(){
+    var txt = document.getElementById("txtbx").value;
+    url = "https://mail.google.com/mail/?view=cm&fs=1&bcc= " + txt + "&su=[Lean On Me] Thanks For Applying &cc= leanonme-hr@mit.edu&body=Dear Applicant,";
+    var win = window.open(url, '_blank');
+    win.focus();
+  };
+
+  function query_field(){
+    query = document.getElementById('status_bx').value;
+    var txt = '';
+    var ref = new Firebase("https://leanonmedb.firebaseio.com/applicants/");
+    ref.on('value', function(snapshot){
+      snapshot.forEach(function(childsnapshot){
+        phone = childsnapshot.key();
+        var applicant = childsnapshot.val();
+        first = applicant.first_name;
+        last = applicant.last_name;
+        url = "https://leanonmedb.firebaseio.com/applicants/" + phone +'/'+query +'/';
+        try{
+          var query_child = new Firebase(url);
+          query_child.once("value", function(snap) {
+            var data = snap.val();
+            // data === "hello"
+            txt = txt + first + ' ' + last + ': ' + data +'\n';
+          });
+        }
+        catch(err){
+          console.log(err.message);
+        }
+      });
+    });
+    document.getElementById('txtbx').value = txt;
+  };
+
+  function convert_applicant(){
+    alert('not finished')
+    query_phone = document.getElementById('status_bx').value;
+    applicant_path = 'https://leanonmedb.firebaseio.com/' + "/applicants/" + "/"+ query_phone +"/";
+    old = new Firebase(applicant_path);
+    old.once('value', function(snapshot){
+      phone = snapshot.key();
+      var applicant = snapshot.val();
+      first = applicant.first_name;
+      last = applicant.last_name;
+      phone = applicant.phone;
+      email = applicant.email;
+      date = applicant.date_added;
+      phone = applicant.phone;
+      password = applicant.password;
+      course = applicant.course;
+      affiliation = applicant.affiliation;
+      living = applicant.living;
+      gender = applicant.gender;
+      ethnicity = applicant.ethnicity;
+      sexual_orientation = applicant.sexual_orientation;
+      athlete = applicant.athlete;
+      hometown = applicant.hometown;
+      hometown_type = applicant.hometown_type;
+      essay = applicant.essay;
+      grad = applicant.graduation_year
+      training_path = 'https://leanonmedb.firebaseio.com/' + "/supporters_in_training/";
+      ref = new Firebase(training_path);
+      ref.child(phone).set({
+        first_name: first_name,
+        last_name: last_name,
+        email: email,
+        date_added: date_added,
+        password: password,
+        essay: essay,
+        labels: {
+          course: course,
+          gender: gender,
+          graduation_year: grad,
+          affiliation: affiliation,
+          living: living,
+          ethnicity: ethnicity,
+          sexual_orientation: sexual_orientation,
+          athlete: athlete,
+          hometown: hometown,
+          hometown_type:hometown_type,
+        },
+      });
+    //old.remove();
+    });
+  };
+
+  function archive_applicant(){
+    counter = 0;
+    ref.on('value', function(snapshot){
+      snapshot.forEach(function(childsnapshot){
+        counter+=1;
+      });
+    });
+    document.getElementById("status_bx").value = 'applicant archived, current applicant count: ' + counter;
+  };
+  function show_training(){
+    function show_applicant_info(){
+      var ref = new Firebase("https://leanonmedb.firebaseio.com/supporters_in_training/");
+      var txt = '';
+      ref.on('value', function(snapshot){
+        snapshot.forEach(function(childsnapshot){
+          var applicant = childsnapshot.val();
+          last = applicant.last_name
+          first = applicant.first_name;
+          phone = applicant.phone;
+          email = applicant.email;
+          txt = txt + last + ', '+ first + ', '+email+', '+ phone +'\n';
+        });
+      });
+      document.getElementById("txtbx").value = txt;
+    };
+  }
+</script>
+
+</html>

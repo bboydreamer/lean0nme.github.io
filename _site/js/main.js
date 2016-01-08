@@ -40,6 +40,7 @@ $("input").keypress(function(event) {
 	}
 });
 
+//form submission to firebase
 $("#subscribe").click(function() {
 	signupEmail()
 });
@@ -61,3 +62,8 @@ function signupEmail() {
 		}
   });
 }
+
+//email signup to Firebase
+$("#subscribe").click(function() {
+	signupEmail()
+});

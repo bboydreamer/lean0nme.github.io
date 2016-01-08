@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="3445.1262"
+   height="720.07373"
+   id="svg4832"
+   version="1.1"
+   inkscape:version="0.48.5 r10040"
+   sodipodi:docname="lean_logo.svg"
+   inkscape:export-filename="C:\lean\lean0nme.github.io\img\option1.png"
+   inkscape:export-xdpi="49.996773"
+   inkscape:export-ydpi="49.996773">
+  <defs
+     id="defs4834" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#d66a6a"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.24748737"
+     inkscape:cx="1376.0914"
+     inkscape:cy="560.91078"
+     inkscape:document-units="px"
+     inkscape:current-layer="g3172"
+     showgrid="false"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:window-width="1440"
+     inkscape:window-height="897"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata4837">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(1347.5631,-172.32532)">
+    <g
+       style="fill:#ffffff;fill-opacity:1"
+       id="g4811"
+       transform="matrix(0.56214072,0.08078308,-0.08078308,0.56214072,-2689.7277,491.83246)">
+      <path
+         sodipodi:nodetypes="ccc"
+         inkscape:connector-curvature="0"
+         id="path4297"
+         d="m 5272.446,-490.03901 c 72.0923,62.4212 204.0088,35.1835 267.9032,-9.6294 l 0,0"
+         style="fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:57.69056702000000300;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+      <g
+         style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-opacity:1"
+         id="g3172"
+         transform="matrix(1.5228539,0.01599388,0.01599388,1.6318512,-8779.6153,-435.77225)">
+        <text
+           xml:space="preserve"
+           style="font-size:1074.25231934000000000px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:1;stroke-opacity:1;font-family:Sans"
+           x="7202.8052"
+           y="1400.6448"
+           id="text2989-6-4"
+           sodipodi:linespacing="125%"
+           transform="matrix(0.99048052,-0.13765299,0.13765299,0.99048052,0,0)"><tspan
+             id="tspan3995"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:1;stroke-opacity:1;font-family:Mistral;-inkscape-font-specification:Mistral"
+             sodipodi:role="line"
+             x="7202.8052"
+             y="1400.6448">Lean On Me</tspan></text>
+      </g>
+    </g>
+  </g>
+</svg>

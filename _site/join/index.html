@@ -36,7 +36,7 @@
     <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
     <!--signups-->
-    
+
     <script type='text/javascript' src='https://cdn.firebase.com/js/client/1.0.17/firebase.js'></script>
     <script type='text/javascript' src='https://cdn.firebase.com/js/simple-login/1.6.1/firebase-simple-login.js'></script>
 
@@ -51,7 +51,7 @@
 
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
   <script>
-  var ref = new Firebase("https://leanonmedb.firebaseio.com/");
+  //var ref = new Firebase("https://leanonmedb.firebaseio.com/");
     // window.fbAsyncInit = function() {
     //   FB.init({
     //     appId      : '178328532500643',
@@ -116,9 +116,8 @@
     <!-- Intro Header -->
     <div class="materialize-fit">
     <header class="team">
-      <div class="signup-body">
+      <div class="signup-body" id='signup-form'>
           <div class="container">
-
             <div class="row">
               <form class="col s12">
                 <div class="row">
@@ -145,7 +144,7 @@
                   </div>
                   <div class="input-field col s6">
                     <input id="phone" type="text" class="validate">
-                    <label for="phone">Phone Number (e.g. +16467984121)</label>
+                    <label for="phone">Full Phone Number (e.g. +16467984121)</label>
                   </div>
                 </div>
                 <div class="row">
@@ -155,7 +154,7 @@
                   </div>
                   <div class="input-field col s6">
                     <input id="password" type="password" class="validate">
-                    <label for="password">Password</label>
+                    <label for="password">Desired Password</label>
                   </div>
                 </div>
 
@@ -494,14 +493,14 @@
                 <div class="row">
                   <div class="col s6">
                     <p>
-                      <input name="gender" type="radio" id="male"/>
+                      <input name="gender" type="checkbox" id="male"/>
                       <label for="male">Male</label>
                     </p>
                   </div>
                   <div class="col s6">
                     <p>
-                      <input name="gender" type="radio" id="neither_gender"/>
-                      <label for="neither_gender">I don't identify with either</label>
+                      <input name="gender" type="checkbox" id="cisgender"/>
+                      <label for="transgender">Cisgender</label>
                     </p>
                   </div>
                 </div>
@@ -509,13 +508,29 @@
                 <div class="row">
                   <div class="col s6">
                     <p>
-                      <input name="gender" type="radio" id="female"/>
+                      <input name="gender" type="checkbox" id="female"/>
                       <label for="female">Female</label>
                     </p>
                   </div>
+
                   <div class="col s6">
                     <p>
-                      <input name="gender" type="radio" id="null_gender"/>
+                      <input name="gender" type="checkbox" id="transgender"/>
+                      <label for="transgender">Transgender</label>
+                    </p>
+                  </div>
+                </div>
+
+              <div class="row">
+                <div class="col s6">
+                  <p>
+                    <input name="gender" type="checkbox" id="neither_gender"/>
+                    <label for="neither_gender">I don't identify with either</label>
+                  </p>
+                </div>
+                  <div class="col s6">
+                    <p>
+                      <input name="gender" type="checkbox" id="null_gender"/>
                       <label for="null_gender">Prefer not to disclose</label>
                     </p>
                   </div>
@@ -615,44 +630,44 @@
                 <div class="row">
                   <div class="col s6">
                     <p>
-                      <input name="orientation" type="radio" id="straight"/>
+                      <input name="orientation" type="checkbox" id="straight"/>
                       <label for="straight">Straight</label>
                     </p>
                   </div>
                   <div class="col s6">
                     <p>
-                      <input name="orientation" type="radio" id="transgender"/>
-                      <label for="transgender">Transgender</label>
-                    </p>
-                  </div>
-                </div>
-
-                <div class="row">
-                  <div class="col s6">
-                    <p>
-                      <input name="orientation" type="radio" id="gay"/>
+                      <input name="orientation" type="checkbox" id="gay"/>
                       <label for="gay">Gay</label>
                     </p>
                   </div>
+                </div>
+                <div class="row">
                   <div class="col s6">
                     <p>
-                      <input name="orientation" type="radio" id="queer"/>
+                      <input name="orientation" type="checkbox" id="queer"/>
                       <label for="queer">Queer</label>
                     </p>
                   </div>
-                </div>
-
-                <div class="row">
                   <div class="col s6">
                     <p>
-                      <input name="orientation" type="radio" id="lesbian"/>
+                      <input name="orientation" type="checkbox" id="lesbian"/>
                       <label for="lesbian">Lesbian</label>
                     </p>
                   </div>
+                </div>
+
+                <div class = "row">
                   <div class="col s6">
                     <p>
-                      <input name="orientation" type="radio" id="asexual"/>
+                      <input name="orientation" type="checkbox" id="asexual"/>
                       <label for="asexual">Asexual</label>
+                    </p>
+                  </div>
+
+                  <div class="col s6">
+                    <p>
+                      <input name="orientation" type="checkbox" id="bisexual"/>
+                      <label for="bisexual">Bisexual</label>
                     </p>
                   </div>
                 </div>
@@ -660,13 +675,7 @@
                 <div class="row">
                   <div class="col s6">
                     <p>
-                      <input name="orientation" type="radio" id="bisexual"/>
-                      <label for="bisexual">Bisexual</label>
-                    </p>
-                  </div>
-                  <div class="col s6">
-                    <p>
-                      <input name="orientation" type="radio" id="null_orientation"/>
+                      <input name="orientation" type="checkbox" id="null_orientation"/>
                       <label for="null_orientation">Prefer not to disclose</label>
                     </p>
                   </div>
@@ -721,8 +730,8 @@
                 <div class="row">
                   <div class="col s6">
                     <p>
-                      <input name="hometown" type="radio" id="west_cost"/>
-                      <label for="no_athlete">U.S. West Coast</label>
+                      <input name="hometown" type="radio" id="west_coast"/>
+                      <label for="west_coast">U.S. West Coast</label>
                     </p>
                   </div>
                   <div class="col s6">
@@ -817,7 +826,7 @@
                   </div>
                   <div class="col s6">
                     <p>
-                      <input name="hometown" type="radio" id="null_hometowen"/>
+                      <input name="hometown" type="radio" id="null_hometown"/>
                       <label for="null_hometown">Prefer not to disclose</label>
                     </p>
                   </div>
@@ -879,14 +888,14 @@
                 <div class="row">
                   <div class="input-field col s12">
                     <p>
-                      Essay Questions
+                      Essay Question
                       <div class="row">
                         <div class="input-field col s12">
-                          <textarea id="essay1" class="materialize-textarea"></textarea>
-                          <label for="essay1">Tell us your story.</label>
+                          <textarea id="essay1" class="materialize-textarea" type="text"></textarea>
+                          <label for="essay1">Somebody texts "drinking makes me feel sad." Discuss your response plan.</label>
                         </div>
                       </div>
-                      <div class="row">
+                      <!--<div class="row">
                         <div class="input-field col s12">
                           <textarea id="essay2" class="materialize-textarea"></textarea>
                           <label for="essay2">Why do you want to be a peer supporter?</label>
@@ -897,12 +906,17 @@
                           <textarea id="essay3" class="materialize-textarea"></textarea>
                           <label for="essay3">Anything else you want us to know?</label>
                         </div>
-                      </div>
+                      </div>-->
                     </p>
                   </div>
                 </div>
 
-                <div class="submit submit-default" id="submit" role="button">Submit Application</div>
+                <div class="submit submit-default" id="submit" role="button" onclick="send_app()">Submit Application</div>
+                <span id="success-text" class="email-result"><b> Thanks for your submission! We will be in touch soon.</b></span>
+                <span id="error-text" class="email-result">Application failed, possibly non-unique phone number. Try again later or send us an email!</span>
+                </br>
+                </br>
+
 
                 <!-- <div class="row">
                   <div class="input-field col s12">
@@ -935,37 +949,347 @@
     <!-- Custom JavaScript -->
     <script src="/js/main2.js"></script>
     <script src="/js/materialize.min.js"></script>
+    <script language = "javascript" type="text/javascript">
+      function send_app() {
+        date_added = Date.now();
+        first_name = document.getElementById('first_name').value;
+        last_name = document.getElementById('last_name').value;
+        graduation_year = document.getElementById('grad').value;
+        phone = document.getElementById('phone').value;
+        email = document.getElementById('email').value;
+        password = document.getElementById('password').value;
+        course = '';
+        if (document.getElementById('1').checked) {
+          course = course + '1, Civil and Environmental Engineering; ' ;
+        }
+        if (document.getElementById('15').checked) {
+          course = course + '15, Business and Management; ' ;
+        }
+        if (document.getElementById('2').checked) {
+          course = course + '2, Mechanical Engineering; ' ;
+        }
+        if (document.getElementById('16').checked) {
+          course = course + '16, Aeronautics and Astronautics; ' ;
+        }
+        if (document.getElementById('3').checked) {
+          course = course + '3, Material Science and Engineering; ' ;
+        }
+        if (document.getElementById('17').checked) {
+          course = course + '17, Political Science; ' ;
+        }
+        if (document.getElementById('4').checked) {
+          course = course + '4, Architecture; ' ;
+        }
+        if (document.getElementById('18').checked) {
+          course = course + '18, Mathematics; ' ;
+        }
+        if (document.getElementById('5').checked) {
+          course = course + '5, Chemistry; ' ;
+        }
+        if (document.getElementById('20').checked) {
+          course = course + '20, Biological Engineering; ' ;
+        }
+        if (document.getElementById('6-1').checked) {
+          course = course + '6-1, Electrical Engineering; ' ;
+        }
+        if (document.getElementById('6-2').checked) {
+          course = course + '6-2, Electrical Engineering and Computer Science; ' ;
+        }
+        if (document.getElementById('6-3').checked) {
+          course = course + '6-3, Computer Science and Engineering; ' ;
+        }
+        if (document.getElementById('21A').checked) {
+          course = course + '21A, Anthropology; ' ;
+        }
+        if (document.getElementById('21F').checked) {
+          course = course + '21F, Global Studies and Languages; ' ;
+        }
+        if (document.getElementById('21H').checked) {
+          course = course + '21H, History; ' ;
+        }
+        if (document.getElementById('6-7').checked) {
+          course = course + '6-7, Computational Biology; ' ;
+        }
+        if (document.getElementById('21L').checked) {
+          course = course + '21L, Literature; ' ;
+        }
+        if (document.getElementById('7').checked) {
+          course = course + '7, Biology; ' ;
+        }
+        if (document.getElementById('21M').checked) {
+          course = course + '21M, Music and Theater Arts; ' ;
+        }
+        if (document.getElementById('8').checked) {
+          course = course + '8, Physics; ' ;
+        }
+        if (document.getElementById('21W').checked) {
+          course = course + '21W, Writing; ' ;
+        }
+        if (document.getElementById('9').checked) {
+          course = course + '9, Brain and Cognitive Sciences; ' ;
+        }
+        if (document.getElementById('22').checked) {
+          course = course + '22, Nuclear Science and Engineering; ' ;
+        }
+        if (document.getElementById('10').checked) {
+          course = course + '10, Chemical Engineering; ' ;
+        }
+        if (document.getElementById('24').checked) {
+          course = course + '24, Linguistics and Philosophy; ' ;
+        }
+        if (document.getElementById('11').checked) {
+          course = course + '11, Urban Studies and Planning; ' ;
+        }
+        if (document.getElementById('CMS').checked) {
+          course = course + 'CMS, Comparitive Media Studies; ' ;
+        }
+        if (document.getElementById('12').checked) {
+          course = course + '12, Earth Atmospheric and Planetary Sciences; ' ;
+        }
+        if (document.getElementById('MAS').checked) {
+          course = course + 'MAS, Media Arts and Sciences; ' ;
+        }
+        if (document.getElementById('14').checked) {
+          course = course + '14, Economics; ' ;
+        }
+        if (document.getElementById('STS').checked) {
+          course = course + 'STS, Science Technology and Society; ' ;
+        }
 
+        affiliation = ''
+        if (document.getElementById('frat').checked) {
+          affiliation = 'fraternity' ;
+        }
+        if (document.getElementById('no_affiliation').checked) {
+          affiliation = 'unaffiliated' ;
+        }
+        if (document.getElementById('sorority').checked) {
+          affiliation = 'sorority' ;
+        }
+        if (document.getElementById('null_affiliation').checked) {
+          affiliation = 'undisclosed' ;
+        }
+
+        living = ''
+        if (document.getElementById('dorm').checked) {
+          living = 'dorm' ;
+        }
+        if (document.getElementById('fsilg').checked) {
+          living = affiliation ;
+        }
+        if (document.getElementById('off_campus').checked) {
+          living = 'off campus' ;
+        }
+        if (document.getElementById('null_live').checked) {
+          living = 'undisclosed' ;
+        }
+
+        gender = ''
+        if (document.getElementById('male').checked) {
+          gender = gender + 'male;' ;
+        }
+        if (document.getElementById('neither_gender').checked) {
+          gender = gender+ 'other;' ;
+        }
+        if (document.getElementById('female').checked) {
+          gender = gender + 'female;' ;
+        }
+        if (document.getElementById('null_gender').checked) {
+          gender = gender + 'undisclosed;' ;
+        }
+        if (document.getElementById('cisgender').checked) {
+          gender = gender + 'cisgender;' ;
+        }
+        if (document.getElementById('transgender').checked){
+          gender = gender + 'transgender;' ;
+        }
+
+        ethnicity = ''
+        if (document.getElementById('caucasian').checked) {
+          ethnicity = ethnicity + 'caucasian; ' ;
+        }
+        if (document.getElementById('middle_eastern').checked) {
+          ethnicity = ethnicity + 'middle eastern; ' ;
+        }
+        if (document.getElementById('hispanic_latino').checked) {
+          ethnicity = ethnicity + 'hispanic, latino; ' ;
+        }
+        if (document.getElementById('east_southeast_asian').checked) {
+          ethnicity = ethnicity + 'east, southeast asian; ' ;
+        }
+        if (document.getElementById('black').checked) {
+          ethnicity = ethnicity + 'black; ' ;
+        }
+        if (document.getElementById('indian_south_asian').checked) {
+          ethnicity = ethnicity + 'indian, south asian; ' ;
+        }
+        if (document.getElementById('native_american').checked) {
+          ethnicity = ethnicity + 'native american; ' ;
+        }
+        if (document.getElementById('pacific_islander').checked) {
+          ethnicity = ethnicity + 'pacific islander; ' ;
+        }
+        if (document.getElementById('filipino').checked) {
+          ethnicity = ethnicity + 'filipino; ' ;
+        }
+        if (document.getElementById('other_ethnicity').checked) {
+          ethnicity = ethnicity + 'other; ' ;
+        }
+
+        sexual = ''
+        if (document.getElementById('straight').checked) {
+          sexual = sexual + 'straight;' ;
+        }
+        if (document.getElementById('gay').checked) {
+          sexual = sexual + 'gay;' ;
+        }
+        if (document.getElementById('queer').checked) {
+          sexual = sexual + 'queer;' ;
+        }
+        if (document.getElementById('lesbian').checked) {
+          sexual = sexual + 'lesbian;' ;
+        }
+        if (document.getElementById('bisexual').checked) {
+          sexual = sexual + 'bisexual;' ;
+        }
+        if (document.getElementById('null_orientation').checked) {
+          sexual = sexual + 'undisclosed;' ;
+        }
+
+        athlete = ''
+        if (document.getElementById('athlete').checked) {
+          athlete = 'athlete' ;
+        }
+        if (document.getElementById('no_athlete').checked) {
+          athlete ='non-athlete' ;
+        }
+
+        hometown = ''
+        if (document.getElementById('east_coast').checked) {
+            hometown='United States East Coast' ;
+        }
+        if (document.getElementById('europe').checked) {
+            hometown='Europe' ;
+        }
+        if (document.getElementById('west_coast').checked) {
+            hometown='United States West Coast' ;
+        }
+        if (document.getElementById('asia').checked) {
+            hometown='Asia' ;
+        }
+        if (document.getElementById('midwest').checked) {
+            hometown='United States Midwest' ;
+        }
+        if (document.getElementById('middle_east').checked) {
+            hometown='Middle East' ;
+        }
+        if (document.getElementById('south').checked) {
+            hometown='United States South' ;
+        }
+        if (document.getElementById('africa').checked) {
+            hometown='Africa' ;
+        }
+        if (document.getElementById('territories').checked) {
+            hometown='United States Territories' ;
+        }
+        if (document.getElementById('apac').checked) {
+            hometown='APAC' ;
+        }
+        if (document.getElementById('mexico').checked) {
+            hometown='Mexico' ;
+        }
+        if (document.getElementById('russia').checked) {
+            hometown='Russia' ;
+        }
+        if (document.getElementById('canada').checked) {
+            hometown='Canada' ;
+        }
+        if (document.getElementById('other_hometown').checked) {
+            hometown='Other' ;
+        }
+        if (document.getElementById('south_america').checked) {
+            hometown='South America' ;
+        }
+        if (document.getElementById('null_hometown').checked) {
+            hometown='Undisclosed' ;
+        }
+
+        hometown_type = ''
+        if (document.getElementById('city').checked) {
+            hometown_type='city' ;
+        }
+        if (document.getElementById('rural').checked) {
+            hometown_type='rural' ;
+        }
+        if (document.getElementById('small_town').checked) {
+            hometown_type='small town' ;
+        }
+        if (document.getElementById('other_hometown_type').checked) {
+            hometown_type='other' ;
+        }
+        if (document.getElementById('suburban').checked) {
+            hometown_type='suburbs' ;
+        }
+        if (document.getElementById('null_hometown_type').checked) {
+            hometown_type='undisclosed' ;
+        }
+
+        essay_response = document.getElementById('essay1').value;
+
+        file_to_write='https://leanonmedb.firebaseio.com/' + "/applicants/";
+        var ref = new Firebase(file_to_write);
+        ref.once('value', function(snapshot){
+          if (snapshot.child(phone).exists()) {
+            alert('Please input a different phone number. We already have an applicant with the phone number listed. If you made an error, please submit using a unique number and clarify the situation in the essay box.')
+          } else {
+            ref.child(phone).set({
+              email: email,
+              first_name: first_name,
+              last_name: last_name,
+              date_added: date_added,
+              graduation_year: graduation_year,
+              phone: phone,
+              password: password,
+              course: course,
+              affiliation: affiliation,
+              living: living,
+              gender: gender,
+              ethnicity: ethnicity,
+              sexual_orientation: sexual,
+              athlete: athlete,
+              hometown: hometown,
+              hometown_type: hometown_type,
+              essay: essay_response
+            }, function(err){
+              $("#submit").hide();
+          		if (err) {
+          		  $("#error-text").fadeIn();
+          		} else {
+          		  $("#success-text").fadeIn();
+                var elements = document.getElementsByTagName("input");
+                for (var ii=0; ii < elements.length; ii++) {
+                  if (elements[ii].type == "text") {
+                    elements[ii].value = " ";
+                  };
+                  if (elements[ii].type == "checkbox" || elements[ii].type == "radio"){
+                    elements[ii].checked = false;
+                  };
+                  document.getElementById('essay1').value=' ';
+                  document.getElementById('password').value='';
+                  document.getElementById('email').value=' ';
+                }
+
+              }
+            }
+          )}});
+            //alert('Thanks for your submission '+ first_name+', we will be in touch shortly.');
+
+      }
+    </script>
     <script type="text/javascript">
 
-    $(document).ready(function() {
-        $('select').material_select();
-    });
+    //pull data from facebook
 
-    $( "#submit" ).click(function() {
-    });
-
-    function fb_connect(){
-      var ref = new Firebase("https://leanonmedb.firebaseio.com");
-      ref.authWithOAuthPopup("facebook", function(error, authData) {
-        if (error) {
-          if (error.code === "TRANSPORT_UNAVAILABLE") {
-            // fall-back to browser redirects, and pick up the session
-            // automatically when we come back to the origin page
-            ref.authWithOAuthRedirect("facebook", function(error) {
-              console.log("Login Failed!", error);
-            });
-          }
-        } else {
-          // the access token will allow us to make Open Graph API calls
-          console.log(authData.facebook.accessToken);
-          console.log(authData.facebook.profileImageURL);
-
-        }
-      }, {
-        scope: "email,user_likes, public_profile" // the permissions requested
-      });
-    }
   </script>
 
 </body>
