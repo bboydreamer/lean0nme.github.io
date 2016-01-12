@@ -127,6 +127,53 @@
                         <a class="btn btn-default" href="/join" role="button">Become A Supporter</a> <br> <br>
                         <a class="btn btn-default" href="blog" role="button">Follow our blog</a>
                     </div>
+                    <div class="col-md-12">
+                      <div id="bar-chart">
+  <div class="graph" >
+    <ul class="x-axis">
+      <li><span>1 Star</span></li>
+      <li><span>2 Star</span></li>
+      <li><span>3 Star</span></li>
+      <li><span>4 Star</span></li>
+      <li><span>5 Star</span></li>
+    </ul>
+    <ul class="y-axis">
+      <li><span>100</span></li>
+      <li><span>75</span></li>
+      <li><span>50</span></li>
+      <li><span>25</span></li>
+      <li><span>0</span></li>
+    </ul>
+    <div class="bars">
+      <div class="bar-group">
+        <div class="bar bar-3 stat-3" id="1Star">
+          <span>1040</span>
+        </div>
+      </div>
+      <div class="bar-group">
+        <div class="bar bar-6 stat-3" id="2Star">
+          <span>1760</span>
+        </div>
+      </div>
+      <div class="bar-group">
+        <div class="bar bar-9 stat-3" id="3Star">
+          <span>2880</span>
+        </div>
+      </div>
+      <div class="bar-group">
+        <div class="bar bar-12 stat-3" id="4Star">
+          <span>4720</span>
+        </div>
+      </div>
+      <div class="bar-group">
+        <div class="bar bar-15 stat-3" id="5Star">
+          <span>7520</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -385,6 +432,54 @@
 
     <!-- Custom JavaScript -->
     <script src="/js/main.js"></script>
+
+    <script>
+    $(document).ready(function(){
+        get_data();
+    });
+    var ref = new Firebase("https://leanonmedb.firebaseio.com/data");
+    var rating_array = {};
+    var counter = 0;
+    function get_data(){
+    ref.on('value', function(snapshot){
+        snapshot.forEach(function(childsnapshot){
+        var key = childsnapshot.key();
+        var rating_count = childsnapshot.val();
+        rating_array[key] = rating_count;
+        console.log(rating_array[key]);
+        counter += 1;
+        if (counter==5){
+            console.log(rating_array);
+        };
+      });
+      display_results();
+      });
+    };
+
+function display_results(){
+    var total = 0;
+    for(var key in rating_array) {
+        total += rating_array[key];
+    };
+    console.log(total);
+    var oneStarRatings = rating_array['1'];
+    var twoStarRatings = rating_array['2'];
+    var threeStarRatings = rating_array['3'];
+    var fourStarRatings = rating_array['4'];
+    var fiveStarRatings = rating_array['5'];
+    var oneStar = document.getElementById('1Star');
+    var twoStar = document.getElementById('2Star');
+    var threeStar = document.getElementById('3Star');
+    var fourStar = document.getElementById('4Star');
+    var fiveStar = document.getElementById('5Star');
+    oneStar.style.height = (oneStarRatings/total)*100+'%';
+    twoStar.style.height = (twoStarRatings/total)*100+'%';
+    threeStar.style.height = (threeStarRatings/total)*100+'%';
+    fourStar.style.height = (fourStarRatings/total)*100+'%';
+    fiveStar.style.height = (fiveStarRatings/total)*100+'%';
+};
+    
+</script>
 
     <script>
     function temp_subscribe(){
